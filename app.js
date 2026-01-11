@@ -292,16 +292,31 @@ function backToQuestion() {
 }
 
 
+function getSectionValue(q) {
+  // Be tolerant: different converters may call this field different things.
+  return (
+    q?.section ??
+    q?.topic ??
+    q?.category ??
+    q?.group ??
+    q?.sectionTitle ??
+    q?.section_name ??
+    q?.topic_name ??
+    ""
+  );
+}
+
 function prettyTopicName(section) {
-  if (!section) return "Untitled";
+  const s = String(section || "").trim();
+  if (!s) return "Unsorted";
   // Normalize different dash types in your source
-  return section.replace(/\s+—\s+/g, " - ").replace(/\s+–\s+/g, " - ");
+  return s.replace(/\s+—\s+/g, " - ").replace(/\s+–\s+/g, " - ");
 }
 
 function computeTopics(questions) {
   const counts = new Map();
   for (const q of questions) {
-    const key = prettyTopicName(q.section || "");
+    const key = prettyTopicName(getSectionValue(q));
     counts.set(key, (counts.get(key) || 0) + 1);
   }
   // Sort topics alphabetically but keep "ALL" at top in the UI
@@ -336,7 +351,7 @@ function applyTopic(topicValue) {
   // Build order as a list of indices into allQuestions
   order = [];
   for (let idx = 0; idx < allQuestions.length; idx++) {
-    const sec = prettyTopicName(allQuestions[idx].section || "");
+    const sec = prettyTopicName(getSectionValue(allQuestions[idx]));
     if (currentTopic === "ALL" || currentTopic === "ALL_RANDOM" || sec === currentTopic) order.push(idx);
   }
 
