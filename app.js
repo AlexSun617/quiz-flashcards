@@ -394,42 +394,49 @@ function applyTopic(topicValue) {
 
   // Build order as a list of indices into allQuestions
   order = [];
-  
+  for (let idx = 0; idx < allQuestions.length; idx++) {
+    const sec = prettyTopicName(getSectionValue(allQuestions[idx]));
+    if (currentTopic === "ALL" || currentTopic === "ALL_RANDOM" || sec === currentTopic) {
+      order.push(idx);
+    }
+  }
 
-  // Safety: if a saved/selected section doesn't exist anymore, fall back to ALL.
+  // Safety: if the selected section has no matches (e.g., data changed), fall back to ALL.
   if (order.length === 0) {
     currentTopic = "ALL";
     localStorage.setItem("quiz_flashcards_topic_v1", currentTopic);
     els.topicSelect.value = currentTopic;
-    order = allQuestions.map((_, idx) => idx);
-  }for (let idx = 0; idx < allQuestions.length; idx++) {
-    const sec = prettyTopicName(getSectionValue(allQuestions[idx]));
-    if (currentTopic === "ALL" || currentTopic === "ALL_RANDOM" || sec === currentTopic) order.push(idx);
+
+    order = [];
+    for (let idx = 0; idx < allQuestions.length; idx++) order.push(idx);
   }
 
   // If doing the combined exam mode, randomize immediately
   if (currentTopic === "ALL_RANDOM") {
     shuffleOrder();
   }
-  // Reset position and render
 
-// Choose a start index for this section:
+  // Choose a start index for this section:
   // 1) Resume the last position in this section (if available)
   // 2) Otherwise jump to the first unattempted question in this section
   // 3) Otherwise start at the beginning
   let startIndex = 0;
 
-  const saved = loadPosition(currentTopic);
-  if (saved !== null && saved >= 0 && saved < order.length) {
-    startIndex = saved;
+  if (currentTopic === "ALL_RANDOM") {
+    startIndex = 0;
   } else {
-    const p = readProgress();
-    for (let k = 0; k < order.length; k++) {
-      const q = allQuestions[order[k]];
-      const qid = String(q?.id ?? order[k]);
-      if (!p.attempted?.[qid]) {
-        startIndex = k;
-        break;
+    const saved = loadPosition(currentTopic);
+    if (saved !== null && saved >= 0 && saved < order.length) {
+      startIndex = saved;
+    } else {
+      const p = readProgress();
+      for (let k = 0; k < order.length; k++) {
+        const q = allQuestions[order[k]];
+        const qid = String(q?.id ?? order[k]);
+        if (!p.attempted?.[qid]) {
+          startIndex = k;
+          break;
+        }
       }
     }
   }
@@ -439,7 +446,9 @@ function applyTopic(topicValue) {
   render();
 
   // Update meta line
-  const topicLabel = (currentTopic === "ALL" ? "All topics" : (currentTopic === "ALL_RANDOM" ? "All topics (randomized)" : currentTopic));
+  const topicLabel = (currentTopic === "ALL"
+    ? "All topics"
+    : (currentTopic === "ALL_RANDOM" ? "All topics (randomized)" : currentTopic));
   els.deckMeta.textContent = `${deck.title || "Study Deck"} • ${topicLabel} • ${order.length} questions`;
 }
 
