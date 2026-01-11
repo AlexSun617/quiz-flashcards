@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz Flashcards</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Flip-card quiz flashcards with explanations." />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">Q</div>
+      <div>
+        <div class="title">Quiz Flashcards</div>
+        <div class="subtitle" id="deckMeta">Loading…</div>
+      </div>
+    </div>
+
+    <div class="topbar-actions">
+      <button class="btn btn-ghost" id="shuffleBtn" title="Shuffle questions">Shuffle</button>
+      <button class="btn btn-ghost" id="randomBtn" title="Jump to a random question">Random</button>
+      <button class="btn btn-ghost" id="resetProgressBtn" title="Reset progress">Reset</button>
+      <a class="btn btn-primary" id="githubHint" href="#" target="_blank" rel="noreferrer">How to host</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="stats">
+      <div class="stat">
+        <div class="stat-label">Question</div>
+        <div class="stat-value"><span id="qIndex">–</span>/<span id="qTotal">–</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Correct</div>
+        <div class="stat-value"><span id="correctCount">0</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Attempted</div>
+        <div class="stat-value"><span id="attemptedCount">0</span></div>
+      </div>
+      <div class="stat wide">
+        <div class="stat-label">Progress</div>
+        <div class="progress">
+          <div class="progress-bar" id="progressBar" style="width:0%"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-shell" aria-live="polite">
+      <div class="card" id="flashcard">
+        <div class="card-face card-front" aria-label="Question side">
+          <div class="card-head">
+            <div class="pill" id="sectionPill">Section</div>
+            <div class="pill" id="multiPill">Single choice</div>
+            <div class="pill pill-muted" id="keyHint">Keys: 1–9, Enter, ←/→</div>
+          </div>
+
+          <h1 class="question" id="questionText">Loading…</h1>
+          <div class="options" id="options"></div>
+
+          <div class="front-actions">
+            <button class="btn btn-ghost" id="prevBtn">← Prev</button>
+            <button class="btn btn-primary" id="submitBtn" disabled>Submit</button>
+            <button class="btn btn-ghost" id="nextBtn">Next →</button>
+          </div>
+
+          <div class="helper" id="helperText"></div>
+        </div>
+
+        <div class="card-face card-back" aria-label="Answer side">
+          <div class="result-row">
+            <div class="result-badge" id="resultBadge">—</div>
+            <div class="result-meta" id="resultMeta"></div>
+          </div>
+
+          <div class="answer-block">
+            <div class="answer-label">Correct answer</div>
+            <div class="answer-value" id="correctAnswer">—</div>
+          </div>
+
+          <div class="answer-block">
+            <div class="answer-label">Your answer</div>
+            <div class="answer-value" id="yourAnswer">—</div>
+          </div>
+
+          <div class="answer-block">
+            <div class="answer-label">Explanation</div>
+            <div class="explain" id="explanation">—</div>
+          </div>
+
+          <div class="back-actions">
+            <button class="btn btn-ghost" id="backBtn">↩ Back</button>
+            <button class="btn btn-primary" id="nextFromBackBtn">Next →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <details>
+        <summary>Question file format (questions.json)</summary>
+        <pre class="code"><code>{
+  "title": "My Study Deck",
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What does OSPF stand for?",
+      "multi": false,
+      "options": [
+        {"id": "A", "text": "Open Shortest Path First"},
+        {"id": "B", "text": "Optimal Shortest Path First"},
+        {"id": "C", "text": "Open Source Path Finder"},
+        {"id": "D", "text": "Outbound Service Path Forwarding"}
+      ],
+      "correct": ["A"],
+      "explanation": "OSPF is a link-state routing protocol; its name expands to Open Shortest Path First."
+    }
+  ]
+}</code></pre>
+      </details>
+
+      <div class="tiny">
+        Tip: put your questions in <span class="mono">questions.json</span> and refresh the page.
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
