@@ -350,7 +350,15 @@ function applyTopic(topicValue) {
 
   // Build order as a list of indices into allQuestions
   order = [];
-  for (let idx = 0; idx < allQuestions.length; idx++) {
+  
+
+  // Safety: if a saved/selected section doesn't exist anymore, fall back to ALL.
+  if (order.length === 0) {
+    currentTopic = "ALL";
+    localStorage.setItem("quiz_flashcards_topic_v1", currentTopic);
+    els.topicSelect.value = currentTopic;
+    order = allQuestions.map((_, idx) => idx);
+  }for (let idx = 0; idx < allQuestions.length; idx++) {
     const sec = prettyTopicName(getSectionValue(allQuestions[idx]));
     if (currentTopic === "ALL" || currentTopic === "ALL_RANDOM" || sec === currentTopic) order.push(idx);
   }
@@ -461,10 +469,12 @@ async function loadDeck() {
   // Validate minimal schema
   data.questions = data.questions.map((q, idx) => {
     const id = q.id ?? `q${idx + 1}`;
-    const options = Array.isArray(q.options) ? q.options : [];
+        const section = prettyTopicName(getSectionValue(q));
+const options = Array.isArray(q.options) ? q.options : [];
     const correct = Array.isArray(q.correct) ? q.correct : [];
     return {
       id,
+    section,
       question: String(q.question ?? ""),
       multi: !!q.multi || correct.length > 1,
       options: options.map((o, j) => ({
