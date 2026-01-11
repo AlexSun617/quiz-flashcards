@@ -164,6 +164,21 @@ function getCurrentQuestion() {
   return allQuestions[order[i]];
 }
 
+
+function renderEmptyTopic() {
+  els.qIndex.textContent = "0";
+  els.qTotal.textContent = "0";
+  els.sectionPill.textContent = currentTopic || "—";
+  els.multiPill.textContent = "—";
+  els.questionText.textContent = "No questions found for this section.";
+  els.options.innerHTML = "";
+  els.yourAnswer.textContent = "";
+  els.explanation.textContent = "";
+  els.deckMeta.textContent = `${deck?.title || "Study Deck"} • ${currentTopic || "Section"} • 0 questions • v4 (2026-01-11)`;
+  els.helperText.textContent = "Open DevTools → Console to see debug output for why filtering returned 0.";
+}
+
+
 function render() {
   if (!deck) return;
 
@@ -389,8 +404,12 @@ function buildTopicOptions() {
 }
 
 function applyTopic(topicValue) {
-  currentTopic = topicValue || "ALL";
-  localStorage.setItem("quiz_flashcards_topic_v1", currentTopic);
+  currentTopic = (topicValue !== undefined && topicValue !== null) ? String(topicValue) : "ALL";
+  if (!currentTopic) currentTopic = "ALL";
+
+  try {
+    localStorage.setItem("quiz_flashcards_topic_v1", currentTopic);
+  } catch {}
 
   // Build order as a list of indices into allQuestions
   order = [];
@@ -401,19 +420,27 @@ function applyTopic(topicValue) {
     }
   }
 
-  // Safety: if the selected section has no matches (e.g., data changed), fall back to ALL.
-  if (order.length === 0) {
-    currentTopic = "ALL";
-    localStorage.setItem("quiz_flashcards_topic_v1", currentTopic);
-    els.topicSelect.value = currentTopic;
-
-    order = [];
-    for (let idx = 0; idx < allQuestions.length; idx++) order.push(idx);
-  }
-
   // If doing the combined exam mode, randomize immediately
   if (currentTopic === "ALL_RANDOM") {
     shuffleOrder();
+  }
+
+  // Debug info (open DevTools Console to see this)
+  try {
+    const firstSec = order.length ? prettyTopicName(getSectionValue(allQuestions[order[0]])) : "(none)";
+    console.log("[QuizFlashcards v4 (2026-01-11)] applyTopic", {
+      selected: currentTopic,
+      orderLen: order.length,
+      firstSectionInOrder: firstSec,
+    });
+  } catch {}
+
+  // If this section has no questions, keep selection but show a friendly message.
+  if (order.length === 0) {
+    i = 0;
+    resetCardState();
+    renderEmptyTopic();
+    return;
   }
 
   // Choose a start index for this section:
@@ -449,7 +476,7 @@ function applyTopic(topicValue) {
   const topicLabel = (currentTopic === "ALL"
     ? "All topics"
     : (currentTopic === "ALL_RANDOM" ? "All topics (randomized)" : currentTopic));
-  els.deckMeta.textContent = `${deck.title || "Study Deck"} • ${topicLabel} • ${order.length} questions`;
+  els.deckMeta.textContent = `${deck.title || "Study Deck"} • ${topicLabel} • ${order.length} questions • v4 (2026-01-11)`;
 }
 
 function initHostingLink() {
