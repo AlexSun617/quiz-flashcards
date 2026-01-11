@@ -22,7 +22,9 @@ const els = {
   correctAnswer: document.getElementById("correctAnswer"),
   yourAnswer: document.getElementById("yourAnswer"),
   explanation: document.getElementById("explanation"),
+  topicSelect: document.getElementById("topicSelect"),
   shuffleBtn: document.getElementById("shuffleBtn"),
+  restartBtn: document.getElementById("restartBtn"),
   randomBtn: document.getElementById("randomBtn"),
   resetProgressBtn: document.getElementById("resetProgressBtn"),
   githubHint: document.getElementById("githubHint"),
@@ -32,6 +34,9 @@ const STORAGE_KEY = "quiz_flashcards_v1";
 const PROGRESS_KEY = "quiz_flashcards_progress_v1";
 
 let deck = null;
+let allQuestions = null; // full deck questions
+let currentTopic = 'ALL';
+
 let order = [];
 let i = 0;
 
@@ -80,12 +85,26 @@ function writeProgress(p) {
 
 function computeStats() {
   const p = readProgress();
-  const attemptedCount = Object.keys(p.attempted).length;
-  const correctCount = Object.keys(p.correct).length;
+
+  // Stats should reflect the currently selected topic (order array).
+  const visibleIds = new Set();
+  for (const qi of order) {
+    const q = allQuestions ? allQuestions[qi] : (deck?.questions?.[qi]);
+    const qid = String(q?.id ?? qi);
+    visibleIds.add(qid);
+  }
+
+  let attemptedCount = 0;
+  let correctCount = 0;
+  for (const qid of visibleIds) {
+    if (p.attempted[qid]) attemptedCount++;
+    if (p.correct[qid]) correctCount++;
+  }
+
   els.attemptedCount.textContent = String(attemptedCount);
   els.correctCount.textContent = String(correctCount);
 
-  const total = deck?.questions?.length || 0;
+  const total = order.length || 0;
   const pct = total ? Math.round((attemptedCount / total) * 100) : 0;
   els.progressBar.style.width = `${pct}%`;
 }
@@ -103,14 +122,14 @@ function resetCardState() {
 }
 
 function getCurrentQuestion() {
-  return deck.questions[order[i]];
+  return allQuestions[order[i]];
 }
 
 function render() {
   if (!deck) return;
 
   const q = getCurrentQuestion();
-  const total = deck.questions.length;
+  const total = order.length;
 
   els.qIndex.textContent = String(i + 1);
   els.qTotal.textContent = String(total);
@@ -190,7 +209,7 @@ function render() {
 
 function setIndex(nextIndex) {
   if (!deck) return;
-  const total = deck.questions.length;
+  const total = order.length;
   i = Math.max(0, Math.min(total - 1, nextIndex));
   resetCardState();
   render();
@@ -206,7 +225,7 @@ function prev() {
 
 function random() {
   if (!deck) return;
-  const total = deck.questions.length;
+  const total = order.length;
   const r = Math.floor(Math.random() * total);
   setIndex(r);
 }
@@ -272,6 +291,70 @@ function backToQuestion() {
   setFlipped(false);
 }
 
+
+function prettyTopicName(section) {
+  if (!section) return "Untitled";
+  // Normalize different dash types in your source
+  return section.replace(/\s+—\s+/g, " - ").replace(/\s+–\s+/g, " - ");
+}
+
+function computeTopics(questions) {
+  const counts = new Map();
+  for (const q of questions) {
+    const key = prettyTopicName(q.section || "");
+    counts.set(key, (counts.get(key) || 0) + 1);
+  }
+  // Sort topics alphabetically but keep "ALL" at top in the UI
+  return Array.from(counts.entries()).sort((a,b) => a[0].localeCompare(b[0]));
+}
+
+function buildTopicOptions() {
+  const topics = computeTopics(allQuestions);
+  els.topicSelect.innerHTML = "";
+  const optAll = document.createElement("option");
+  optAll.value = "ALL";
+  optAll.textContent = `All topics (${allQuestions.length})`;
+  els.topicSelect.appendChild(optAll);
+
+  const optAllRand = document.createElement("option");
+  optAllRand.value = "ALL_RANDOM";
+  optAllRand.textContent = `All topics (randomized)`;
+  els.topicSelect.appendChild(optAllRand);
+
+  for (const [name, count] of topics) {
+    const opt = document.createElement("option");
+    opt.value = name;
+    opt.textContent = `${name} (${count})`;
+    els.topicSelect.appendChild(opt);
+  }
+}
+
+function applyTopic(topicValue) {
+  currentTopic = topicValue || "ALL";
+  localStorage.setItem("quiz_flashcards_topic_v1", currentTopic);
+
+  // Build order as a list of indices into allQuestions
+  order = [];
+  for (let idx = 0; idx < allQuestions.length; idx++) {
+    const sec = prettyTopicName(allQuestions[idx].section || "");
+    if (currentTopic === "ALL" || currentTopic === "ALL_RANDOM" || sec === currentTopic) order.push(idx);
+  }
+
+  // If doing the combined exam mode, randomize immediately
+  if (currentTopic === "ALL_RANDOM") {
+    shuffleOrder();
+  }
+
+  // Reset position and render
+  i = 0;
+  resetCardState();
+  render();
+
+  // Update meta line
+  const topicLabel = (currentTopic === "ALL" ? "All topics" : (currentTopic === "ALL_RANDOM" ? "All topics (randomized)" : currentTopic));
+  els.deckMeta.textContent = `${deck.title || "Study Deck"} • ${topicLabel} • ${order.length} questions`;
+}
+
 function initHostingLink() {
   // Helpful link: GitHub Pages docs (no hard URL in markup per policy; keep in JS ok)
   // Users can still click.
@@ -287,8 +370,21 @@ function wireEvents() {
   els.nextFromBackBtn.addEventListener("click", () => { backToQuestion(); next(); });
 
   els.shuffleBtn.addEventListener("click", shuffleOrder);
+  els.restartBtn.addEventListener("click", () => {
+    // Restart current quiz without wiping progress: go back to Q1 and optionally reshuffle.
+    if (currentTopic === "ALL_RANDOM") {
+      shuffleOrder();
+    }
+    i = 0;
+    resetCardState();
+    render();
+  });
   els.randomBtn.addEventListener("click", random);
   els.resetProgressBtn.addEventListener("click", resetProgress);
+
+  els.topicSelect.addEventListener("change", () => {
+    applyTopic(els.topicSelect.value);
+  });
 
   // Keyboard shortcuts
   document.addEventListener("keydown", (e) => {
@@ -374,10 +470,16 @@ async function init() {
 
   try {
     deck = await loadDeck();
-    order = deck.questions.map((_, idx) => idx);
+    allQuestions = deck.questions;
+    // Default order includes all questions; topic selection will rebuild order.
+    order = allQuestions.map((_, idx) => idx);
     i = 0;
 
-    els.deckMeta.textContent = `${deck.title || "Study Deck"} • ${deck.questions.length} questions`;
+    buildTopicOptions();
+    const savedTopic = localStorage.getItem("quiz_flashcards_topic_v1") || "ALL";
+    els.topicSelect.value = savedTopic;
+    applyTopic(savedTopic);
+
     render();
   } catch (err) {
     console.error(err);

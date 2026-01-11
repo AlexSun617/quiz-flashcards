@@ -1,11 +1,12 @@
 {
-  "title": "Networking Knowledge Assessments",
+  "title": "Exam Practice Quizzes",
+  "version": "4.0",
+  "generated_at": "2026-01-11T22:15:24.063395",
   "questions": [
     {
       "id": "q1",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "Which of the following is not a downside of fully meshing BGP peers?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -27,13 +28,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Node isolation."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q2",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "Without route reflectors or confederations, how do IBGP peers have to be organized in a Transit AS?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -55,13 +56,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: IBGP peers must be fully meshed with each other.."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q3",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "What kind of routing protocol runs within an organization's or enterprise's autonomous system?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -83,13 +84,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: IGP."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q4",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "What is the name for the 'standardized multi-stage process' used by BGP peers to establish a peer relationship?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -111,13 +112,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Finite State Machine."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q5",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "Approximately how many routing table entries does an Internet BGP router currently hold?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -129,23 +130,23 @@
         },
         {
           "id": "C",
-          "text": "Inmillion"
+          "text": "1 million"
         },
         {
           "id": "D",
-          "text": "1@million"
+          "text": "10 million"
         }
       ],
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Inmillion."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q6",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "Which of the following is not a true description of BGP?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -157,23 +158,23 @@
         },
         {
           "id": "C",
-          "text": "BGPadvertises any intra-AS topology changes."
+          "text": "BGP advertises any intra-AS topology changes."
         },
         {
           "id": "D",
-          "text": "BGPis a selective routing protocol."
+          "text": "BGP is a selective routing protocol."
         }
       ],
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: BGPadvertises any intra-AS topology changes.."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q7",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "What's another name for a 'path attribute'?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -195,13 +196,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Metric."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q8",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "With confederations, Member ASs are connected by BGP peers running which protocol?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -213,7 +214,7 @@
         },
         {
           "id": "C",
-          "text": "Interconfederation EBGP"
+          "text": "_Interconfederation EBGP"
         },
         {
           "id": "D",
@@ -223,13 +224,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Intraconfederation EBGP."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q9",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "What would a BGP peer router do if it received no Keepalive message from its peer router within the required timeframe?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -251,13 +252,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: End the BGP peering.."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q10",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "Which of the following statements is correct?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -269,19 +270,23 @@
         },
         {
           "id": "C",
-          "text": "There are several routing protocols used to connect autonomous systems,"
+          "text": "There are several routing protocols used to connect autonomous systems, but BGP has become popular recently."
+        },
+        {
+          "id": "D",
+          "text": "BGP is a very popular inter-AS routing protocol, but IS-IS can also be used."
         }
       ],
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: BGP is the only routing protocol used to connect autonomous systems.."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q11",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "Why do you need to be careful using BGP 'redistribute' statements?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -293,19 +298,23 @@
         },
         {
           "id": "C",
-          "text": "Because they will share the entire set of local IGP prefixes if you don't use some form"
+          "text": "Because they will share the entire set of local IGP prefixes if you don't use some form of filtering."
+        },
+        {
+          "id": "D",
+          "text": "Because they will only redistribute a maximum of 1024 prefixes from each autonomous system."
         }
       ],
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Because they will share the entire set of local IGP prefixes if you don't use some form."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q12",
-      "section": "Knowledge Assessment — BGP Overview",
-      "question": "autonomous system. Which transport protocol is used by BGP to establish peering sessions?",
-      "multi": false,
+      "section": "BGP SECTION",
+      "question": "Which transport protocol is used by BGP to establish peering sessions?",
       "options": [
         {
           "id": "A",
@@ -327,13 +336,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: TcP."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q13",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "Internal BGP can be used to create what kind of distributed system, capable of aggregating and forwarding IP traffic in bulk?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -355,13 +364,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Transit AS."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q14",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "Which statement is not a true statement about the BGP state model?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -383,13 +392,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: There are time duration dependencies for all state transitions.."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q15",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "Which two statements are used to instruct a router to share prefixes?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -411,13 +420,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Network and redistribute."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q16",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "Which of these four qualities is not typically used to describe BGP?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -439,13 +448,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Low latency."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q17",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "Which is the only path attribute to be added individually by a subsequent RFC to RFC4271?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -467,41 +476,41 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: AIGP."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q18",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "What is the main purpose of path attributes?",
-      "multi": false,
       "options": [
         {
           "id": "A",
-          "text": "Tocommunicate Link layer information."
+          "text": "To communicate Link layer information."
         },
         {
           "id": "B",
-          "text": "Todifferentiate between IBGP and EBGP-connected peers."
+          "text": "To differentiate between IBGP and EBGP-connected peers."
         },
         {
           "id": "C",
-          "text": "Toenablea BGP router to select the best path to a network prefix."
+          "text": "To enable a BGP router to select the best path to a network prefix."
         },
         {
           "id": "D",
-          "text": "Tocommunicate how many BGP peers each BGP router has."
+          "text": "To communicate how many BGP peers each BGP router has."
         }
       ],
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Toenablea BGP router to select the best path to a network prefix.."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q19",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "How do BGP peers exchange path attribute information?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -523,13 +532,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Using Update messages.."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q20",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "The path attribute 'Origin type' prefers what type of paths?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -551,13 +560,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Locally imported paths.."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q21",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "In Accumulated IGP ('AIGP'), what is being accumulated?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -579,13 +588,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Metrics."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q22",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "What does the Network Layer Reachability Information (NLRI) consist of?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -607,13 +616,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Length and Prefix."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q23",
-      "section": "Knowledge Assessment — BGP Overview",
+      "section": "BGP SECTION",
       "question": "During the 'Internal/External tiebreaker step, which type of routes will BGP remove from consideration?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -635,13 +644,41 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: All routes received via iBGP."
+      "multi": false,
+      "explanation": ""
     },
     {
       "id": "q24",
-      "section": "Knowledge Assessment — BGP Overview",
-      "question": "Which of the following does not exist in a modern network that uses switches rather than hubs.",
+      "section": "BGP SECTION",
+      "question": "Which of the following statements about the tiebreaking process is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A tie is possible."
+        },
+        {
+          "id": "B",
+          "text": "There are 10 types of path attribute to compare."
+        },
+        {
+          "id": "C",
+          "text": "Some path attributes are optional, so they can be omitted from the best path selection process."
+        },
+        {
+          "id": "D",
+          "text": "The list of path attributes must be compared in strict order."
+        }
+      ],
+      "correct": [
+        "D"
+      ],
       "multi": false,
+      "explanation": ""
+    },
+    {
+      "id": "q25",
+      "section": "ETHERNET SECTION",
+      "question": "Which of the following does not exist in a modern network that uses switches rather than hubs.",
       "options": [
         {
           "id": "A",
@@ -663,13 +700,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Collisions."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q25",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q26",
+      "section": "ETHERNET SECTION",
       "question": "What field in an Ethernet header comes between the Destination Address field and the Type field?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -691,13 +728,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Source Address."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q26",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q27",
+      "section": "ETHERNET SECTION",
       "question": "When a broadcast is sent to a switch, the switch will forward it to......?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -717,15 +754,15 @@
         }
       ],
       "correct": [
-        "A"
+        "D"
       ],
-      "explanation": "Correct answer: all interfaces connected to switches."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q27",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q28",
+      "section": "ETHERNET SECTION",
       "question": "A bridge builds up a bridging table by examining the _____ of incoming frames?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -747,13 +784,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Source MAC address."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q28",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q29",
+      "section": "ETHERNET SECTION",
       "question": "Bridges and switches increase the number of collision domains in a network.",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -767,13 +804,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: True."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q29",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q30",
+      "section": "ETHERNET SECTION",
       "question": "Which of the following OSI Layers does Ethernet operate on?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -799,13 +836,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Data Link."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q30",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q31",
+      "section": "ETHERNET SECTION",
       "question": "E-Line creates a virtual (i) connection between sites and E-LAN creates a virtual (ii) connection between sites. Fill in the two blanks with the correct terms.",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -827,13 +864,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: (i) point-to-point, (ii) multipoint-to-multipoint."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q31",
-      "section": "Knowledge Assessment — BGP Overview",
-      "question": "Typically, switches process frames (i) whereas bridges process frames (ii) . Fill in the two blanks with the correct terms.",
-      "multi": false,
+      "id": "q32",
+      "section": "ETHERNET SECTION",
+      "question": "Typically, switches process frames (i) whereas bridges process frames (ii). Fill in the two blanks with the correct terms.",
       "options": [
         {
           "id": "A",
@@ -855,13 +892,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: (i) in hardware, (ii) in software."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q32",
-      "section": "Knowledge Assessment — BGP Overview",
-      "question": "At which speed does an 10@@Base-LX1@ Ethernet connection operate?",
-      "multi": false,
+      "id": "q33",
+      "section": "ETHERNET SECTION",
+      "question": "At which speed does an 1000Base-LX10 Ethernet connection operate?",
       "options": [
         {
           "id": "A",
@@ -883,13 +920,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: 1Gbit/s."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q33",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q34",
+      "section": "ETHERNET SECTION",
       "question": "How many bits are there in an Ethernet address?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -911,13 +948,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: 48."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q34",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q35",
+      "section": "ETHERNET SECTION",
       "question": "Can different interfaces on the same switch be assigned to different VLANs?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -931,13 +968,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Yes."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q35",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q36",
+      "section": "ETHERNET SECTION",
       "question": "Do VLANs allow different networks to connect to the same switches?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -951,13 +988,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Yes."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q36",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q37",
+      "section": "ETHERNET SECTION",
       "question": "Where in an Ethernet frame are the VLAN tags inserted?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -969,23 +1006,23 @@
         },
         {
           "id": "C",
-          "text": "Inthe Data field."
+          "text": "In the Data field."
         },
         {
           "id": "D",
-          "text": "Inthe Type field, just after the Source Address field."
+          "text": "In the Type field, just after the Source Address field."
         }
       ],
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: After the Source Address field and before the Type field.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q37",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q38",
+      "section": "ETHERNET SECTION",
       "question": "What is the name of the main standard for VLAN tagging?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1001,19 +1038,19 @@
         },
         {
           "id": "D",
-          "text": "IEEE 8@6.Q in Asia and IEEE 802.1Q in the rest of the world."
+          "text": "IEEE 806. Q in Asia and IEEE 802.1Q in the rest of the world."
         }
       ],
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: IEEE 802.1Q."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q38",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q39",
+      "section": "ETHERNET SECTION",
       "question": "Which VLAN tagging operations exist?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1035,13 +1072,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Push, Pop, Swap."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q39",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q40",
+      "section": "ETHERNET SECTION",
       "question": "What is the part of a double-tagged frame called that contains two VLAN tags?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1063,13 +1100,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: VLAN tag stack."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q40",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q41",
+      "section": "ETHERNET SECTION",
       "question": "What are switch ports configured as ina VLAN?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1091,13 +1128,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Access ports or Trunk ports."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q41",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q42",
+      "section": "ETHERNET SECTION",
       "question": "What are the outer and inner VLAN tags also called?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1119,13 +1156,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Service tag / S-tag and Customer tag / C-tag."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q42",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q43",
+      "section": "ETHERNET SECTION",
       "question": "Which is true regarding an Ethernet Spanning Tree?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1147,13 +1184,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: There is only one active path between any two points.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q43",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q44",
+      "section": "ETHERNET SECTION",
       "question": "MSTP is superior to STP and RSTP on three points and inferior on one. Which is the latter?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1175,13 +1212,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Flawless interaction with legacy bridges."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q44",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q45",
+      "section": "ETHERNET SECTION",
       "question": "Which connection type does NOT exist for RSTP?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1203,13 +1240,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Dedicated."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q45",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q46",
+      "section": "ETHERNET SECTION",
       "question": "Where in the Ethernet frame is the information encapsulated on which the port role selections are based?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1231,13 +1268,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: In the Data field.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q46",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q47",
+      "section": "ETHERNET SECTION",
       "question": "What is the name of the messages Ethernet switches running spanning tree protocols send to each other?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1259,13 +1296,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: BPDU."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q47",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q48",
+      "section": "ETHERNET SECTION",
       "question": "Which is an STP port role?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1287,13 +1324,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Root port."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q48",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q49",
+      "section": "ETHERNET SECTION",
       "question": "Which kind of port is always in forwarding state?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1315,13 +1352,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Root bridge port."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q49",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q50",
+      "section": "ETHERNET SECTION",
       "question": "RSTP includes two port roles not defined in STP. Backup is one of them, which is the other?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1343,13 +1380,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Alternate."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q50",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q51",
+      "section": "QOS SECTION",
       "question": "Which of these applications is not affected so much by delay?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1375,17 +1412,17 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: File transfer."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q51",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q52",
+      "section": "QOS SECTION",
       "question": "Which of these methods is not a way of increasing capacity in a network?",
-      "multi": false,
       "options": [
         {
           "id": "A",
-          "text": "Increase the number of switches"
+          "text": "_ Increase the number of switches"
         },
         {
           "id": "B",
@@ -1407,13 +1444,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Implement proper queuing mechanisms in the routers."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q52",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q53",
+      "section": "QOS SECTION",
       "question": "What does QoS stands for?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1439,13 +1476,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Quality of Service."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q53",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q54",
+      "section": "QOS SECTION",
       "question": "Which of the following applications is an example of a \"real-time\" application?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1467,13 +1504,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: VoIP."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q54",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q55",
+      "section": "QOS SECTION",
       "question": "For what purpose was Internet traditionally used?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1495,13 +1532,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: To transfer information from one location to another."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q55",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q56",
+      "section": "QOS SECTION",
       "question": "Jitter is the metering of packets due to a service level agreement with the customer.",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1515,17 +1552,17 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: False."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q56",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q57",
+      "section": "QOS SECTION",
       "question": "Which statement or statements are true regarding DiffServ architecture?",
-      "multi": false,
       "options": [
         {
           "id": "A",
-          "text": "So Routers at the edge of a DiffServ domain mark packets according to the domain QoS policy"
+          "text": "Routers at the edge of a DiffServ domain mark packets according to the domain QoS policy"
         },
         {
           "id": "B",
@@ -1537,19 +1574,19 @@
         },
         {
           "id": "D",
-          "text": "Each router within a DiffServ domain needs to classify incoming packets to provide proper QoS"
+          "text": "Each router within a DiffServ domain needs to classify incoming packets to provide proper QoS handling"
         }
       ],
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: So Routers at the edge of a DiffServ domain mark packets according to the domain QoS policy."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q57",
-      "section": "Knowledge Assessment — BGP Overview",
-      "question": "handling Where is the DiffServ (Differentiated Services) value defined?",
-      "multi": false,
+      "id": "q58",
+      "section": "QOS SECTION",
+      "question": "Where is the DiffServ (Differentiated Services) value defined?",
       "options": [
         {
           "id": "A",
@@ -1571,13 +1608,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: In the IP header of a packet."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q58",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q59",
+      "section": "QOS SECTION",
       "question": "When classifying traffic, which type of identifier will classify a packet based only on the value of the DSCP?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1595,13 +1632,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: BA identifier."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q59",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q60",
+      "section": "QOS SECTION",
       "question": "In PWFQ scheduling, which of the following factors is taken into consideration first when deciding on which queue should be served first?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1623,13 +1660,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Priority."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q60",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q61",
+      "section": "QOS SECTION",
       "question": "Even if there is plenty of bandwidth available, which of the following might still cause problems in the network?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1651,13 +1688,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Jitter."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q61",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q62",
+      "section": "QOS SECTION",
       "question": "WFQ uses what to manage division of bandwidth between queues?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1679,13 +1716,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Weight."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q62",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q63",
+      "section": "QOS SECTION",
       "question": "How many different types of traffic does DiffServ allow?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1707,13 +1744,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: 64."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q63",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q64",
+      "section": "QOS SECTION",
       "question": "When using RED as a traffic congestion avoidance mechanism, all the packets trying to enter the queue will be dropped when:",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1721,7 +1758,7 @@
         },
         {
           "id": "B",
-          "text": "The queue depth reaches a point where drop probability is 10@."
+          "text": "The queue depth reaches a point where drop probability is 100."
         },
         {
           "id": "C",
@@ -1735,13 +1772,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: The queue depth reaches a point where drop probability is 1.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q64",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q65",
+      "section": "QOS SECTION",
       "question": "A port has been configured with PWFQ scheduler for 4 queues and a maximum rate of 4 Mbit/s. Queue 0 has been configured with a priority 1 and a weight of 52. Queue 1 has been configured with priority 1 and weight 50. Queues 3 and 4 both have a priority of 2 but weights of 30 and 70 respectively. At this given moment the port receives the following traffic pattern: No traffic for queue 0. 1 Mb of traffic for queue 1. 3 Mb for queue 3. 2.5 Mb for queue 4. How much traffic will be transmitted from Queue 1?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1763,13 +1800,41 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: 1Mb."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q65",
-      "section": "Knowledge Assessment — BGP Overview",
-      "question": "same class How many QoS classes are supported by the Ethernet standard?",
+      "id": "q66",
+      "section": "QOS SECTION",
+      "question": "Finish the sentence with the correct answer. When packets are marked with an AF class, the higher the drop probability",
+      "options": [
+        {
+          "id": "A",
+          "text": "The greater the chance of the packet being discarded when compared with packets marked with a lower class"
+        },
+        {
+          "id": "B",
+          "text": "The lower the chance of the packet being discarded when compared to other packets in the same class"
+        },
+        {
+          "id": "C",
+          "text": "The lower the chance of the packet being discarded when compared with packets marked with a lower class"
+        },
+        {
+          "id": "D",
+          "text": "The greater the chance of the packet being discarded when compared to other packets in the same class"
+        }
+      ],
+      "correct": [
+        "D"
+      ],
       "multi": false,
+      "explanation": ""
+    },
+    {
+      "id": "q67",
+      "section": "QOS SECTION",
+      "question": "How many QoS classes are supported by the Ethernet standard?",
       "options": [
         {
           "id": "A",
@@ -1791,13 +1856,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: 8."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q66",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q68",
+      "section": "QOS SECTION",
       "question": "TCAs are agreements between what?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1819,13 +1884,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Boundary nodes.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q67",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q69",
+      "section": "QOS SECTION",
       "question": "Which of the following classes of PHB in DiffServ is the higher priority QoS class out of the following?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1847,13 +1912,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: EF."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q68",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q70",
+      "section": "QOS SECTION",
       "question": "If using PWFQ, when the priorities of all the queues are the same, then the schedulers behave like?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1875,13 +1940,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: WFQ."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q69",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q71",
+      "section": "QOS SECTION",
       "question": "Which one of the following statements is true about queuing?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1897,19 +1962,19 @@
         },
         {
           "id": "D",
-          "text": "Packets arriving are put in different queues in a round-robin fashion, depending on which"
+          "text": "Packets arriving are put in different queues in a round-robin fashion, depending on which arrive first."
         }
       ],
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: It will only work properly if the flow of traffic is bursty.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q70",
-      "section": "Knowledge Assessment — BGP Overview",
-      "question": "arrive first. Why do many IP networks use a 'meshed' topology?",
-      "multi": false,
+      "id": "q72",
+      "section": "IP SECTION",
+      "question": "Why do many IP networks use a 'meshed' topology?",
       "options": [
         {
           "id": "A",
@@ -1931,13 +1996,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: To provide resiliency and additional capacity.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q71",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q73",
+      "section": "IP SECTION",
       "question": "From where did the physical Internet originate?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1959,13 +2024,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: The ARPAnet in the USA.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q72",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q74",
+      "section": "IP SECTION",
       "question": "In which decade was the World Wide Web (HTML, URLs etc.) founded?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -1987,13 +2052,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: 1990s."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q73",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q75",
+      "section": "IP SECTION",
       "question": "The TCP/IP model consists of the Application, Network, Link and which other layer?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2015,13 +2080,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Transport."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q74",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q76",
+      "section": "IP SECTION",
       "question": "Which type of network element comprises much of the central fabric of the Internet?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2043,13 +2108,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Router."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q75",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q77",
+      "section": "IP SECTION",
       "question": "Which of the following is a true statement?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2071,13 +2136,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: IP connects users to services over networks such as the Internet.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q76",
-      "section": "Knowledge Assessment — BGP Overview",
+      "id": "q78",
+      "section": "IP SECTION",
       "question": "Which is a true statement about using IPv4 and IPv6 in the same network?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2093,19 +2158,19 @@
         },
         {
           "id": "D",
-          "text": "It is possible for both to co-exist only if all network routers are provided by the same"
+          "text": "It is possible for both to co-exist only if all network routers are provided by the same vendor."
         }
       ],
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: It is possible for both to co-exist.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q77",
-      "section": "Knowledge Assessment — BGP Overview",
-      "question": "vendor. Before IP networks were established as multiservice networks ('One IP network'), how were networks built?",
-      "multi": false,
+      "id": "q79",
+      "section": "IP SECTION",
+      "question": "Before IP networks were established as multiservice networks ('One IP network'), how were networks built?",
       "options": [
         {
           "id": "A",
@@ -2127,13 +2192,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Individual networks were built for each traffic type.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q78",
-      "section": "Knowledge Assessment — TCP/IP Model and Transport Layer",
+      "id": "q80",
+      "section": "IP SECTION",
       "question": "Why does the Border Gateway Protocol use TCP?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2155,13 +2220,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Because TCP guarantees data integrity.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q79",
-      "section": "Knowledge Assessment — TCP/IP Model and Transport Layer",
+      "id": "q81",
+      "section": "IP SECTION",
       "question": "Which of the following datagram types has a header and a trailer?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2183,13 +2248,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: An Ethernet frame.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q80",
-      "section": "Knowledge Assessment — TCP/IP Model and Transport Layer",
+      "id": "q82",
+      "section": "IP SECTION",
       "question": "What are Application port numbers used for?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2211,13 +2276,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: They are used by Transport protocols to direct datagrams to the correct Application.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q81",
-      "section": "Knowledge Assessment — TCP/IP Model and Transport Layer",
+      "id": "q83",
+      "section": "IP SECTION",
       "question": "If the TCP transport protocol is used when the end-to-end network is suffering from a relatively high number of bit errors, what could you do to try to increase throughput while maintaining data integrity?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2239,13 +2304,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Use the BGP transport protocol instead of TCP.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q82",
-      "section": "Knowledge Assessment — TCP/IP Model and Transport Layer",
+      "id": "q84",
+      "section": "IP SECTION",
       "question": "Which of the following are the names for the four layers in the TCP/IP model, from 'top' to 'bottom'?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2267,13 +2332,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Application, Transport, Network, Link."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q83",
-      "section": "Knowledge Assessment — TCP/IP Model and Transport Layer",
+      "id": "q85",
+      "section": "IP SECTION",
       "question": "Which standards body is responsible for Internet standards?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2295,13 +2360,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: The Internet Engineering Task Force.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q84",
-      "section": "Knowledge Assessment — TCP/IP Model and Transport Layer",
+      "id": "q86",
+      "section": "IP SECTION",
       "question": "Why does the Network Time Protocol use UDP?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2323,13 +2388,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Because speed is the most important requirement.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q85",
-      "section": "Knowledge Assessment — TCP/IP Model and Transport Layer",
+      "id": "q87",
+      "section": "IP SECTION",
       "question": "Which phrase represents the UDP transport strategy?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2351,13 +2416,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: 'Send and hope'."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q86",
-      "section": "Knowledge Assessment — IP v4 Addressing",
+      "id": "q88",
+      "section": "IPV4 SECTION",
       "question": "Which of the following is a correct statement?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2365,7 +2430,7 @@
         },
         {
           "id": "B",
-          "text": "The network 1@.x.x.x is not a Private IP address, where x = @ to 255."
+          "text": "The network 10. x. x. x is not a Private IP address, where x = 0 to 255."
         },
         {
           "id": "C",
@@ -2379,13 +2444,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Private IP addresses are not routable externally.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q87",
-      "section": "Knowledge Assessment — IP v4 Addressing",
+      "id": "q89",
+      "section": "IPV4 SECTION",
       "question": "How long is an IPv4 address and what order are the two parts of the address represented, left to right?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2407,13 +2472,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: 32 bits, network part then host part."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q88",
-      "section": "Knowledge Assessment — IP v4 Addressing",
+      "id": "q90",
+      "section": "IPV4 SECTION",
       "question": "Which of the following is not a technique to maximize available address space?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2435,13 +2500,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Using subnet masks."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q89",
-      "section": "Knowledge Assessment — IP v4 Addressing",
+      "id": "q91",
+      "section": "IPV4 SECTION",
       "question": "Which of these is a Class B network address?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2463,13 +2528,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: 190.155.63.0."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q90",
-      "section": "Knowledge Assessment — IP v4 Addressing",
+      "id": "q92",
+      "section": "IPV4 SECTION",
       "question": "If an ISP is assigned the network address 202.100.0.0/16, which of the following subnets could be assigned to a customer of the ISP?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2491,13 +2556,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: 202.100.192.0/18."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q91",
-      "section": "Knowledge Assessment — IP v4 Addressing",
+      "id": "q93",
+      "section": "IPV4 SECTION",
       "question": "If you wanted to create subnets from a Class B address, what is the minimum length subnet mask you could use?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2519,13 +2584,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: 17."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q92",
-      "section": "Knowledge Assessment — IP v4 Addressing",
+      "id": "q94",
+      "section": "IPV4 SECTION",
       "question": "You can decide which Class (A, B, C) a classful network address is by inspecting which octet (left to right)?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2547,13 +2612,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: First."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q93",
-      "section": "Knowledge Assessment — IP v4 Addressing",
+      "id": "q95",
+      "section": "IPV4 SECTION",
       "question": "When you apply a subnet mask to an IP address, what logical function is performed?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2575,13 +2640,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: AND."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q94",
-      "section": "Knowledge Assessment — IP v4 Addressing",
+      "id": "q96",
+      "section": "IPV4 SECTION",
       "question": "In which part of an IP network will you normally find the highest throughput capacity routers?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2603,13 +2668,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: The core."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q95",
-      "section": "Knowledge Assessment — IP v4 Addressing",
+      "id": "q97",
+      "section": "IPV4 SECTION",
       "question": "Which of these answers represents two link state routing protocols?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2631,13 +2696,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: IS-IS, OSPF."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q96",
-      "section": "Knowledge Assessment — IP v4 Addressing",
+      "id": "q98",
+      "section": "IPV4 SECTION",
       "question": "A routing table entry includes a network address, a next hop address, and what else?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2659,13 +2724,41 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: A port or interface identifier.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q97",
-      "section": "Knowledge Assessment — IP v4 Addressing",
-      "question": "route lookup. In an IP network, is the path from A to B always the same as from B to A but in reverse?",
+      "id": "q99",
+      "section": "IPV4 SECTION",
+      "question": "When a router makes a routing decision and sends a packet to the next hop, what happens at the next hop router?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The next hop router uses the routing decision already made by the previous router and sends the packet to the predetermined next hop."
+        },
+        {
+          "id": "B",
+          "text": "The next hop router makes its own routing decision and sends the packet onto the new next hop."
+        },
+        {
+          "id": "C",
+          "text": "The next hop router extracts the payload from the incoming packet and creates a new IP packet with its own source address, before route selection and transmission to the new next hop."
+        },
+        {
+          "id": "D",
+          "text": "The next hop router sends the packet to the destination address without performing a route lookup."
+        }
+      ],
+      "correct": [
+        "B"
+      ],
       "multi": false,
+      "explanation": ""
+    },
+    {
+      "id": "q100",
+      "section": "IPV4 SECTION",
+      "question": "In an IP network, is the path from A to B always the same as from B to A but in reverse?",
       "options": [
         {
           "id": "A",
@@ -2687,13 +2780,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: No."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q98",
-      "section": "Knowledge Assessment — IP v4 Addressing",
+      "id": "q101",
+      "section": "IPV4 SECTION",
       "question": "What type of routers are used in 'the cloud'?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2715,13 +2808,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Virtual."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q99",
-      "section": "Knowledge Assessment — IP v4 Addressing",
+      "id": "q102",
+      "section": "IPV4 SECTION",
       "question": "IP Routing determines which one of the following?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2743,13 +2836,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: The path data follows when transmitted from source to destination.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q100",
-      "section": "Knowledge Assessment — IP v4 Addressing",
+      "id": "q103",
+      "section": "IPV4 SECTION",
       "question": "Which of these factors is not a primary routing protocol characteristic?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2771,13 +2864,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: How quality of service (QoS) can be delivered.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q101",
-      "section": "Knowledge Assessment — IP v4 Topology Considerations",
-      "question": "Why is quick convergence a positive characteristic for a routing protocol?",
-      "multi": false,
+      "id": "q104",
+      "section": "IPV4 SECTION",
+      "question": "Knowledge Assessment — IP v4 Topology Considerations Why is quick convergence a positive characteristic for a routing protocol?",
       "options": [
         {
           "id": "A",
@@ -2789,19 +2882,23 @@
         },
         {
           "id": "C",
-          "text": "Because during the time a network is not converged, the routing process may have"
+          "text": "Because during the time a network is not converged, the routing process may have unpredictable results."
+        },
+        {
+          "id": "D",
+          "text": "Because quick convergence increases router packet throughput during converged conditions too."
         }
       ],
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Because during the time a network is not converged, the routing process may have."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q102",
-      "section": "Knowledge Assessment — IP v4 Topology Considerations",
-      "question": "too. What is a common reason for loops forming in IP networks?",
-      "multi": false,
+      "id": "q105",
+      "section": "IPV4 SECTION",
+      "question": "What is a common reason for loops forming in IP networks?",
       "options": [
         {
           "id": "A",
@@ -2823,13 +2920,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Routing tables not reflecting the true state of the network topology.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q103",
-      "section": "Knowledge Assessment — IP v4 Topology Considerations",
-      "question": "What is/are the missing word(s) in the following sentence? Routing convergence happens when a set of routers in a network all share the same information about the network in which they operate.",
-      "multi": false,
+      "id": "q106",
+      "section": "IPV4 SECTION",
+      "question": "What is/are the missing word (s) in the following sentence? Routing convergence happens when a set of routers in a network all share the same information about the network in which they operate.",
       "options": [
         {
           "id": "A",
@@ -2851,13 +2948,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Topology."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q104",
-      "section": "Knowledge Assessment — IP v4 Topology Considerations",
+      "id": "q107",
+      "section": "IPV4 SECTION",
       "question": "What mechanism exists to provide protection against link and node failures, before network convergence occurs?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2879,13 +2976,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Fast reroute."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q105",
-      "section": "Knowledge Assessment — IP v4 Topology Considerations",
+      "id": "q108",
+      "section": "IPV4 SECTION",
       "question": "Which of the following statements about large routing tables is incorrect?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2907,37 +3004,41 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Large routing tables require more host IP addresses for each router.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q106",
-      "section": "Knowledge Assessment — IP v4 Topology Considerations",
-      "question": "networks.",
-      "multi": false,
+      "id": "q109",
+      "section": "IPV4 SECTION",
+      "question": "What is a primary use for Border Routers?",
       "options": [
         {
           "id": "A",
-          "text": "To filter and limit traffic based upon application type."
+          "text": "To act as an aggregation/concentration point for a large number of links from other networks."
         },
         {
           "id": "B",
-          "text": "To manage routing updates traveling between autonomous systems."
+          "text": "To filter and limit traffic based upon application type."
         },
         {
           "id": "C",
+          "text": "To manage routing updates traveling between autonomous systems."
+        },
+        {
+          "id": "D",
           "text": "To provide packet replication for multicast services."
         }
       ],
       "correct": [
-        "B"
+        "C"
       ],
-      "explanation": "Correct answer: To manage routing updates traveling between autonomous systems.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q107",
-      "section": "Knowledge Assessment — IP v4 Topology Considerations",
+      "id": "q110",
+      "section": "IPV4 SECTION",
       "question": "What is a possible consequence when a loop forms?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2959,13 +3060,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Link saturation will occur.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q108",
-      "section": "Knowledge Assessment — IP v4 Topology Considerations",
+      "id": "q111",
+      "section": "IPV4 SECTION",
       "question": "How does BGP solve the problem of exponential routing table growth?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -2987,33 +3088,41 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Through route summarization between autonomous systems.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q109",
-      "section": "Knowledge Assessment — IP v4 Topology Considerations",
-      "question": "addresses with IP addresses.",
-      "multi": false,
+      "id": "q112",
+      "section": "IPV4 SECTION",
+      "question": "How is an IP packet transported over Ethernet?",
       "options": [
         {
           "id": "A",
-          "text": "IP packets are encapsulated within Ethernet frames."
+          "text": "Ethernet frames are encapsulated within IP packets."
         },
         {
           "id": "B",
+          "text": "IP packets are sent using the Ethernet frame structure, substituting MAC addresses with IP addresses."
+        },
+        {
+          "id": "C",
+          "text": "IP packets are encapsulated within Ethernet frames."
+        },
+        {
+          "id": "D",
           "text": "IP packets are sent in an Ethernet frame variant using the IPoE protocol."
         }
       ],
       "correct": [
-        "A"
+        "C"
       ],
-      "explanation": "Correct answer: IP packets are encapsulated within Ethernet frames.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q110",
-      "section": "Knowledge Assessment — IP v4 Topology Considerations",
+      "id": "q113",
+      "section": "IPV4 SECTION",
       "question": "If a PC on a local area Ethernet network needs to communicate with a newly installed printer on the same Ethernet, how does it find the printer's Destination MAC address?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3035,13 +3144,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: The PC checks its ARP table then issues an ARP request, if required.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q111",
-      "section": "Knowledge Assessment — IP v4 Topology Considerations",
+      "id": "q114",
+      "section": "IPV4 SECTION",
       "question": "CSMA/CD stands for 'Carrier Sense Multiple Access with (...) Detection'. What is the missing word?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3063,13 +3172,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Collision."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q112",
-      "section": "Knowledge Assessment — IP v4 Topology Considerations",
+      "id": "q115",
+      "section": "IPV4 SECTION",
       "question": "What function does the Frame Check Sequence perform for Ethernet frames?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3091,13 +3200,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: It provides the ability to detect corrupted Ethernet frame data.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q113",
-      "section": "Knowledge Assessment — IP v4 Topology Considerations",
+      "id": "q116",
+      "section": "IPV4 SECTION",
       "question": "At which layer in the TCP/IP model does Ethernet operate?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3119,13 +3228,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Link."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q114",
-      "section": "Knowledge Assessment — IP v4 Topology Considerations",
+      "id": "q117",
+      "section": "IPV4 SECTION",
       "question": "What is another name for a default route?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3147,41 +3256,41 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: The zero address."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q115",
-      "section": "Knowledge Assessment — IP v4 Topology Considerations",
-      "question": "ARP is a widely used communications protocol for ...?",
-      "multi": false,
+      "id": "q118",
+      "section": "IPV4 SECTION",
+      "question": "ARP is a widely used communications protocol for...?",
       "options": [
         {
           "id": "A",
-          "text": "resolving routing table entries into longest matches."
+          "text": ".. resolving routing table entries into longest matches."
         },
         {
           "id": "B",
-          "text": "resolving network-layer IP addresses into link layer MAC addresses."
+          "text": ".. resolving network-layer IP addresses into link layer MAC addresses."
         },
         {
           "id": "C",
-          "text": "resolving Ethernet contention issues."
+          "text": ".. resolving Ethernet contention issues."
         },
         {
           "id": "D",
-          "text": "resolving Ethernet MAC address duplication conflicts."
+          "text": ".. resolving Ethernet MAC address duplication conflicts."
         }
       ],
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: resolving network-layer IP addresses into link layer MAC addresses.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q116",
-      "section": "Knowledge Assessment — IP v4 Topology Considerations",
+      "id": "q119",
+      "section": "IPV4 SECTION",
       "question": "Which standards body is responsible for the Ethernet main standard 802.3?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3203,13 +3312,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: IEEE."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q117",
-      "section": "Knowledge Assessment - IPv6 Overview",
+      "id": "q120",
+      "section": "IPV6 SECTION",
       "question": "Which statement is true about dual-stack routers?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3217,56 +3326,83 @@
         },
         {
           "id": "B",
-          "text": "Dual-stack routers can forward IPv6 packets, but IPv4 packets must be encapsulated in"
+          "text": "Dual-stack routers can forward IPv6 packets, but IPv4 packets must be encapsulated in IPv6."
+        },
+        {
+          "id": "C",
+          "text": "Dual-stack routers are expensive because they require hardware duplication of every part of the router."
+        },
+        {
+          "id": "D",
+          "text": "All routers in an IPv4/IPv6 network must be dual-stack routers."
         }
       ],
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Dual-stack routers can forward IPv4 and IPv6 packets simultaneously.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q118",
-      "section": "Knowledge Assessment - IPv6 Overview",
-      "question": "IPv6 directly enables a version of which routing protocol?",
-      "multi": true,
+      "id": "q121",
+      "section": "IPV6 SECTION",
+      "question": "How large is the IPv6 address space?",
       "options": [
         {
           "id": "A",
-          "text": "2^96 addresses"
+          "text": "2^32 addresses"
         },
         {
           "id": "B",
-          "text": "2^128 addresses"
+          "text": "2^64 addresses"
         },
         {
           "id": "C",
-          "text": "OSPF"
+          "text": "2^96 addresses"
         },
         {
           "id": "D",
+          "text": "2^128 addresses"
+        }
+      ],
+      "correct": [
+        "D"
+      ],
+      "multi": false,
+      "explanation": ""
+    },
+    {
+      "id": "q122",
+      "section": "IPV6 SECTION",
+      "question": "IPv6 directly enables a version of which routing protocol?",
+      "options": [
+        {
+          "id": "A",
+          "text": "OSPF"
+        },
+        {
+          "id": "B",
           "text": "Segment Routing"
         },
         {
-          "id": "E",
+          "id": "C",
           "text": "IS-IS"
         },
         {
-          "id": "F",
+          "id": "D",
           "text": "BGP"
         }
       ],
       "correct": [
-        "B",
-        "D"
+        "B"
       ],
-      "explanation": "Correct answers: 2^128 addresses; Segment Routing."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q119",
-      "section": "Knowledge Assessment - IPv6 Overview",
+      "id": "q123",
+      "section": "IPV6 SECTION",
       "question": "Which protocol came between IPv4 and IPv6?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3288,13 +3424,41 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Internet Stream Protocol."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q120",
-      "section": "Knowledge Assessment - IPv6 Overview",
-      "question": "Why is hexadecimal notation used in written IPv6 addresses?",
+      "id": "q124",
+      "section": "IPV6 SECTION",
+      "question": "Which statement is true about IPv6 deployment?",
+      "options": [
+        {
+          "id": "A",
+          "text": "IPv6 deployment has been slower than perhaps anticipated, but deployment is significant, and will continue to grow."
+        },
+        {
+          "id": "B",
+          "text": "IPv6 has been an unnecessary standard, and deployment has been minimal."
+        },
+        {
+          "id": "C",
+          "text": "IPv6 has only been deployed in a small number of countries and organizations, and there is no expectation that it will grow."
+        },
+        {
+          "id": "D",
+          "text": "IPv6 deployment has quickly replaced IPv4, and IPv4 only remains in isolated 'islands'."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
       "multi": false,
+      "explanation": ""
+    },
+    {
+      "id": "q125",
+      "section": "IPV6 SECTION",
+      "question": "Why is hexadecimal notation used in written IPv6 addresses?",
       "options": [
         {
           "id": "A",
@@ -3316,13 +3480,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: It makes the address shorter than using decimal or binary notation.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q121",
-      "section": "Knowledge Assessment - IPv6 Overview",
+      "id": "q126",
+      "section": "IPV6 SECTION",
       "question": "How much larger is an IPv6 address compared with an IPv4 address?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3344,13 +3508,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: 96 bits."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q122",
-      "section": "Knowledge Assessment - IPv6 Overview",
+      "id": "q127",
+      "section": "IPV6 SECTION",
       "question": "What are the two main IPv4-to-IPv6 transition techniques?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3372,13 +3536,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Tunneling and translation."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q123",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q128",
+      "section": "IPV6 SECTION",
       "question": "A maximum of how many IPv6 addresses can be assigned to an IPv6 interface?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3400,13 +3564,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Three or more."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q124",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q129",
+      "section": "IPV6 SECTION",
       "question": "A minimum of how many bits of subnet address is required to represent 8 networks?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3428,13 +3592,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Three."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q125",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q130",
+      "section": "IPV6 SECTION",
       "question": "An IPv6 address consists of how many bits?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3456,13 +3620,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: 128."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q126",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q131",
+      "section": "IPV6 SECTION",
       "question": "Why is colon-hexadecimal notation used instead of dotted-decimal notation for IPv6 address representation?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3484,13 +3648,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: To shorten addresses.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q127",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q132",
+      "section": "IPV6 SECTION",
       "question": "In an IPv6 address, what does'::' (double colon) signify?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3512,13 +3676,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Zero compression."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q128",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q133",
+      "section": "IPV6 SECTION",
       "question": "Who directly supplies a company with an IPv6 Global routing prefix?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3540,13 +3704,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: An Internet Service Provider.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q129",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q134",
+      "section": "IPV6 SECTION",
       "question": "How is '1101' (binary) represented in hexadecimal notation?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3568,13 +3732,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: d."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q130",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q135",
+      "section": "IPV6 SECTION",
       "question": "Which of the following is not a legitimate way to represent the following IPv6 address? 2001:0db8:140c:8000:0000:00d0:0000:140f",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3596,13 +3760,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: 2001:db8:140c::d0::140f."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q131",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q136",
+      "section": "IPV6 SECTION",
       "question": "Which part of an IPv6 destination address does an IPv6 router use to make a forwarding decision for a received IPv6 packet?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3624,13 +3788,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Routing prefix."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q132",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q137",
+      "section": "IPV6 SECTION",
       "question": "Unique local unicast addresses can be used to provide what?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3652,13 +3816,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Private addressing.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q133",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q138",
+      "section": "IPV6 SECTION",
       "question": "What dictates the use of IPv6 address space?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3680,13 +3844,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Internet Engineering Task Force standards.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q134",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q139",
+      "section": "IPV6 SECTION",
       "question": "Which is the largest possible IPv4 or IPv6 packet header?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3708,13 +3872,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: 60 bytes."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q135",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q140",
+      "section": "IPV6 SECTION",
       "question": "Which of the following is a legitimate reason to reduce the number of header fields from IPv4 to IPv6?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3726,19 +3890,23 @@
         },
         {
           "id": "C",
-          "text": "Advanced routers can no longer handle more than 8 fields because of the Application"
+          "text": "Advanced routers can no longer handle more than 8 fields because of the Application Specific Integrated Circuits (ASICs) used."
+        },
+        {
+          "id": "D",
+          "text": "IPv6 has no need for any of the Options that were used in IPv4."
         }
       ],
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Fewer header fields means reduced processing for routing nodes.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q136",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q141",
+      "section": "IPV6 SECTION",
       "question": "Which Extension Header must appear first if more than one is used in a chain?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3760,13 +3928,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Hop-by-Hop Options."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q137",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q142",
+      "section": "IPV6 SECTION",
       "question": "Which two fields comprise 80% of the IPv6 packet header?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3788,13 +3956,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Source and Destination Addresses."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q138",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q143",
+      "section": "IPV6 SECTION",
       "question": "Which IPv6 header characteristic helps to improve overall forwarding performance?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3816,13 +3984,41 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Simplicity."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q139",
-      "section": "Knowledge Assessment - IPv6 Addressing",
-      "question": "Each Extension Header must be a multiple of how many octets/bytes?",
+      "id": "q144",
+      "section": "IPV6 SECTION",
+      "question": "Which of the following is a unique aspect of the ESP Extension Header, compared with the other Extension Headers described?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Next Header field is toward the end of the Extension Header rather than being the first field."
+        },
+        {
+          "id": "B",
+          "text": "The ESP Extension Header does not align to 8-octet boundaries."
+        },
+        {
+          "id": "C",
+          "text": "The ESP Extension Header cannot be chained with other Extension Headers."
+        },
+        {
+          "id": "D",
+          "text": "The ESP Extension Header has to be used with a Fragment Extension Header."
+        }
+      ],
+      "correct": [
+        "A"
+      ],
       "multi": false,
+      "explanation": ""
+    },
+    {
+      "id": "q145",
+      "section": "IPV6 SECTION",
+      "question": "Each Extension Header must be a multiple of how many octets/bytes?",
       "options": [
         {
           "id": "A",
@@ -3844,13 +4040,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: 8."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q140",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q146",
+      "section": "IPV6 SECTION",
       "question": "How does IPv6 cater for the functionality that was previously included in the IPv4 'Options' field?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3872,13 +4068,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: IPv6uses one or more Extension Headers.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q141",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q147",
+      "section": "IPV6 SECTION",
       "question": "What is one of the biggest differences between stateless and stateful address autoconfiguration?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3900,13 +4096,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: No DHCP server is required.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q142",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q148",
+      "section": "IPV6 SECTION",
       "question": "Neighbor Discovery Protocol is supported by messages from which other protocol?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3928,13 +4124,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: ICMP."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q143",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q149",
+      "section": "IPV6 SECTION",
       "question": "Which of the following is not a Neighbor Discovery Protocol application?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3956,13 +4152,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Routing update generation."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q144",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q150",
+      "section": "IPV6 SECTION",
       "question": "Which is one of the main benefits of IPv6 autoconfiguration?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -3984,13 +4180,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Reduced operational costs.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q145",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q151",
+      "section": "IPV6 SECTION",
       "question": "When the 'EUI-64 interface identifier' is used to create IPv6 addresses, what is the address created upon?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4012,13 +4208,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: The interface's MAC address.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q146",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q152",
+      "section": "IPV6 SECTION",
       "question": "How does an IPv6 host find its local network prefix?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4040,13 +4236,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: The host sends a 'Router Solicitation' ICMPv6 message to its local router.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q147",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q153",
+      "section": "IPV6 SECTION",
       "question": "Why are DNSv6 resource records called 'AAAA'?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4068,13 +4264,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Because IPv6 addresses are four times as long as IPv4 addresses.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q148",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q154",
+      "section": "IPV6 SECTION",
       "question": "What are the two types of ICMP messages?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4096,13 +4292,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Error and informational."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q149",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q155",
+      "section": "ISIS SECTION",
       "question": "What type of protocol is IS-IS?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4124,13 +4320,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Link state."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q150",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q156",
+      "section": "ISIS SECTION",
       "question": "IS-IS is used to exchange routing information.",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4144,13 +4340,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: True."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q151",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q157",
+      "section": "ISIS SECTION",
       "question": "Which protocol family does IS-IS belong to?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4172,13 +4368,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: ISO/OSI."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q152",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q158",
+      "section": "ISIS SECTION",
       "question": "What is true about Integrated IS-IS?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4200,13 +4396,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: It supports routing for both IP and ISO/OSI protocols."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q153",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q159",
+      "section": "ISIS SECTION",
       "question": "In which environment can IS-IS be deployed? (Choose 3)",
-      "multi": true,
       "options": [
         {
           "id": "A",
@@ -4230,13 +4426,13 @@
         "C",
         "D"
       ],
-      "explanation": "Correct answers: Dual OSI and IP; Pure OSI; Pure IP."
+      "multi": true,
+      "explanation": ""
     },
     {
-      "id": "q154",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q160",
+      "section": "ISIS SECTION",
       "question": "A router needs to build a routing table before it can forward traffic.",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4250,13 +4446,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: True."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q155",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q161",
+      "section": "ISIS SECTION",
       "question": "Which are true statements about ISO/OSI protocols? (Choose 2)",
-      "multi": true,
       "options": [
         {
           "id": "A",
@@ -4279,13 +4475,13 @@
         "A",
         "D"
       ],
-      "explanation": "Correct answers: They have been used to manage telecommunication equipment; They were supposed to replace TCP/IP."
+      "multi": true,
+      "explanation": ""
     },
     {
-      "id": "q156",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q162",
+      "section": "ISIS SECTION",
       "question": "What does a Level-1 IS router do? (Choose two)",
-      "multi": true,
       "options": [
         {
           "id": "A",
@@ -4308,13 +4504,13 @@
         "B",
         "C"
       ],
-      "explanation": "Correct answers: Sends packets destined for a different area to the closest Level 1/2 IS in its own area; Keeps track of the topology changes within its own area."
+      "multi": true,
+      "explanation": ""
     },
     {
-      "id": "q157",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q163",
+      "section": "ISIS SECTION",
       "question": "Select the most probable cause of suboptimal routing in IS-IS networks",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4336,13 +4532,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Default path selection based on attached bit."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q158",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q164",
+      "section": "ISIS SECTION",
       "question": "What is the SPF calculation based on for IS-IS?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4360,13 +4556,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Metric assigned to links."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q159",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q165",
+      "section": "ISIS SECTION",
       "question": "What is true about a Level 2 router? (Choose three)",
-      "multi": true,
       "options": [
         {
           "id": "A",
@@ -4378,7 +4574,7 @@
         },
         {
           "id": "C",
-          "text": "So Can have neighbors in the same and different areas"
+          "text": "Can have neighbors in the same and different areas"
         },
         {
           "id": "D",
@@ -4390,13 +4586,13 @@
         "C",
         "D"
       ],
-      "explanation": "Correct answers: Is a backbone router; So Can have neighbors in the same and different areas; Contains both a Level 1 and Level 2 link-state database."
+      "multi": true,
+      "explanation": ""
     },
     {
-      "id": "q160",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q166",
+      "section": "ISIS SECTION",
       "question": "Select the 3 major components of an NSAP used in IP networks (Select three).",
-      "multi": true,
       "options": [
         {
           "id": "A",
@@ -4424,13 +4620,13 @@
         "C",
         "E"
       ],
-      "explanation": "Correct answers: AFI + area; SEL; System ID."
+      "multi": true,
+      "explanation": ""
     },
     {
-      "id": "q161",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q167",
+      "section": "ISIS SECTION",
       "question": "How many DIS''es can be elected in a single L1 area?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4452,13 +4648,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Unlimited number."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q162",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q168",
+      "section": "ISIS SECTION",
       "question": "Which statement is true regarding suboptimal routing in IS-IS networks?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4480,13 +4676,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: It can happen when routing between areas."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q163",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q169",
+      "section": "ISIS SECTION",
       "question": "Which router will a Level 1 router choose when it needs to send a packet destined fora different area?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4494,7 +4690,7 @@
         },
         {
           "id": "B",
-          "text": "It chooses the Level 1 or Level 2 router having the shortest path to the destination."
+          "text": "_ It chooses the Level 1 or Level 2 router having the shortest path to the destination."
         },
         {
           "id": "C",
@@ -4508,13 +4704,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: It chooses the Level 1 router having the shortest path to the destination.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q164",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q170",
+      "section": "ISIS SECTION",
       "question": "What information can be found in an LSP? (Choose two)",
-      "multi": true,
       "options": [
         {
           "id": "A",
@@ -4541,13 +4737,13 @@
         "C",
         "D"
       ],
-      "explanation": "Correct answers: Networks connected to the originating IS; A List of networks existing in the given area."
+      "multi": true,
+      "explanation": ""
     },
     {
-      "id": "q165",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q171",
+      "section": "ISIS SECTION",
       "question": "All IS-IS routers within the same area must have the same topology database.",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4561,13 +4757,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: True."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q166",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q172",
+      "section": "ISIS SECTION",
       "question": "A Level 1 router can have adjacent neighbors in a different area.",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4581,13 +4777,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: False."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q167",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q173",
+      "section": "ISIS SECTION",
       "question": "How do IS routers learn a network topology?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4609,13 +4805,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: By examining content of received LSPs."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q168",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q174",
+      "section": "ISIS SECTION",
       "question": "IS systems are considered neighbors when:",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4637,13 +4833,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: They both received hello messages confirming neighbor status."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q169",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q175",
+      "section": "ISIS SECTION",
       "question": "Routing between different areas refers to which level of routing?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4665,13 +4861,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Level 2."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q170",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q176",
+      "section": "ISIS SECTION",
       "question": "What challenge does broadcast network present from the topology perspective?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4693,13 +4889,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Broadcast segments generate too much control traffic."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q171",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q177",
+      "section": "ISIS SECTION",
       "question": "Which are IS-IS router types? (Choose three)",
-      "multi": true,
       "options": [
         {
           "id": "A",
@@ -4723,13 +4919,13 @@
         "B",
         "C"
       ],
-      "explanation": "Correct answers: Level 1/2; Level 1; Level 2."
+      "multi": true,
+      "explanation": ""
     },
     {
-      "id": "q172",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q178",
+      "section": "ISIS SECTION",
       "question": "An L1/L2 router maintains two separate IP routing tables.",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4743,13 +4939,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: False."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q173",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q179",
+      "section": "ISIS SECTION",
       "question": "An L1/L2 router maintains two separate link state databases.",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4763,13 +4959,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: True."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q174",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q180",
+      "section": "ISIS SECTION",
       "question": "What is true about a Level 1 router?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4791,13 +4987,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: It knows the topology only of its own area."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q175",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q181",
+      "section": "ISIS SECTION",
       "question": "Which action or actions can a Label Edge Router (LER) perform?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4819,13 +5015,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Pop and push."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q176",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q182",
+      "section": "MPLS SECTION",
       "question": "Which is another common name for an MPLS header?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4847,13 +5043,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Shim header."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q177",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q183",
+      "section": "MPLS SECTION",
       "question": "What do MPLS labels identify?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4875,13 +5071,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Established paths between endpoints."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q178",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q184",
+      "section": "MPLS SECTION",
       "question": "What is the purpose of Differentiated Services or DiffServ?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4903,13 +5099,41 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: It is used for prioritization purposes."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q179",
-      "section": "Knowledge Assessment - IPv6 Addressing",
-      "question": "What are routers that operate at the edge of MPLS networks called?",
+      "id": "q185",
+      "section": "MPLS SECTION",
+      "question": "Which two protocols can automate label configuration and label distribution in an MPLS network?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Label Distribution Protocol (LDP) and Resource Reservation Protocol - Traffic Engineering (RSVP-TE)"
+        },
+        {
+          "id": "B",
+          "text": "Link Layer Discovery Protocol (LLDP) and Label Distribution Protocol (LDP)"
+        },
+        {
+          "id": "C",
+          "text": "Label Distribution Protocol (LDP) and Resource Preservation Protocol - Traffic Enlightenment (RPVP-TE)"
+        },
+        {
+          "id": "D",
+          "text": "Internet Control Message Protocol (ICMP) and Open Shortest Path First (OSPF)"
+        }
+      ],
+      "correct": [
+        "A"
+      ],
       "multi": false,
+      "explanation": ""
+    },
+    {
+      "id": "q186",
+      "section": "MPLS SECTION",
+      "question": "What are routers that operate at the edge of MPLS networks called?",
       "options": [
         {
           "id": "A",
@@ -4931,13 +5155,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Label Edge Router (LER)."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q180",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q187",
+      "section": "MPLS SECTION",
       "question": "At which layer in the OSI model is MPLS said to operate?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4959,13 +5183,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Layer 2.5."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q181",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q188",
+      "section": "MPLS SECTION",
       "question": "What kind of data can MPLS carry?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -4987,13 +5211,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: All the above and more."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q182",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q189",
+      "section": "MPLS SECTION",
       "question": "What does the Traffic Class field in an MPLS label identify?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5015,13 +5239,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: The QoS priority."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q183",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q190",
+      "section": "MPLS SECTION",
       "question": "MPLS inserts an MPLS header in packets. What is the most common mode for how this is done?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5035,13 +5259,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Frame mode."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q184",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q191",
+      "section": "MPLS SECTION",
       "question": "Where is the MPLS header located in a packet that contains a Layer 2 header and a payload header?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5063,13 +5287,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Right of the Layer 2 header."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q185",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q192",
+      "section": "MPLS SECTION",
       "question": "What do MPLS labels identify?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5091,13 +5315,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Established paths between endpoints."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q186",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q193",
+      "section": "MPLS SECTION",
       "question": "What is one router type in an MPLS network called?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5119,13 +5343,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Label Switch Router (LSR)."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q187",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q194",
+      "section": "MPLS SECTION",
       "question": "What kind of data can MPLS carry?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5147,13 +5371,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: All the above and more."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q188",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q195",
+      "section": "MPLS SECTION",
       "question": "Can MPLS carry data for circuit-based networks and packet-switched networks?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5175,13 +5399,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Yes."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q189",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q196",
+      "section": "MPLS SECTION",
       "question": "How many Label Switch Paths (LSPs) does duplex traffic require?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5203,13 +5427,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: 2."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q190",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q197",
+      "section": "MPLS SECTION",
       "question": "Which descriptions match (1) Convergence-based resilience and (2) Fast Reroute (FRR)?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5227,13 +5451,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: (1) Reactive handling with recalculation and (2) proactive handling with pre-calculation."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q191",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q198",
+      "section": "MPLS SECTION",
       "question": "At which layer in the OSI model do LDP and RSVP-TE operate?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5255,13 +5479,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Transport layer."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q192",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q199",
+      "section": "MPLS SECTION",
       "question": "Which label distribution mode or modes are available for RSVP-TE?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5283,13 +5507,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Downstream on Demand."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q193",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q200",
+      "section": "MPLS SECTION",
       "question": "For RSVP-TE, where is a description of the LSP stored?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5311,13 +5535,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: In an Explicit Route Object (ERO) in all routers along the LSP."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q194",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q201",
+      "section": "MPLS SECTION",
       "question": "Which protocol selects the path to activate as an LSP?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5339,13 +5563,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: The IGP."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q195",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q202",
+      "section": "MPLS SECTION",
       "question": "Which is the main difference between LDP and RSVP-TE?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5367,13 +5591,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: RSVP-TE provides greater control over LSPs."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q196",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q203",
+      "section": "MPLS SECTION",
       "question": "Based on what does RSVP-TE select a Label Switched Path (LSP)?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5395,13 +5619,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: A manually defined Forwarding Equivalence Class (FEC)."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q197",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q204",
+      "section": "MPLS SECTION",
       "question": "For every network prefix in the FIB, LDP in the Label Edge Routers (LERs) and Label Switch Routers (LSRs) binds FECs to...?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5423,13 +5647,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Labels."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q198",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q205",
+      "section": "OSPF SECTION",
       "question": "Which area plays the main role in the OSPF concept?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5451,13 +5675,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Backbone."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q199",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q206",
+      "section": "OSPF SECTION",
       "question": "The routing table is required by router in order to forward traffic.",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5471,13 +5695,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: True."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q200",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q207",
+      "section": "OSPF SECTION",
       "question": "What type of protocol is OSPF?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5499,13 +5723,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Link state."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q201",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q208",
+      "section": "OSPF SECTION",
       "question": "All areas must be connected to the Backbone area.",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5519,13 +5743,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: True."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q202",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q209",
+      "section": "OSPF SECTION",
       "question": "What are the reasons to divide one large network into multiple smaller areas? (Choose 2)",
-      "multi": true,
       "options": [
         {
           "id": "A",
@@ -5541,7 +5765,7 @@
         },
         {
           "id": "D",
-          "text": "It makes all changes inside any area invisible for all other areas ."
+          "text": "It makes all changes inside any area invisible for all other areas."
         },
         {
           "id": "E",
@@ -5552,13 +5776,13 @@
         "B",
         "D"
       ],
-      "explanation": "Correct answers: It reduces the number of routing recalculations in the routing database.; It makes all changes inside any area invisible for all other areas .."
+      "multi": true,
+      "explanation": ""
     },
     {
-      "id": "q203",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q210",
+      "section": "OSPF SECTION",
       "question": "Choose the true statement.",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5576,13 +5800,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: OSPF is used to exchange routing information and calculate best paths to all destinations.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q204",
-      "section": "Knowledge Assessment - IPv6 Addressing",
+      "id": "q211",
+      "section": "OSPF SECTION",
       "question": "In the OSPF there are different roles routers can perform.",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5596,13 +5820,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: True."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q205",
-      "section": "Knowledge Assessment - IPv6 Addressing",
-      "question": "Area Border Router is the router which :",
-      "multi": false,
+      "id": "q212",
+      "section": "OSPF SECTION",
+      "question": "Area Border Router is the router which:",
       "options": [
         {
           "id": "A",
@@ -5620,13 +5844,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Connects one or more areas to the Backbone Area.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q206",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q213",
+      "section": "OSPF SECTION",
       "question": "Which area plays the main role in the OSPF concept?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5648,13 +5872,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Backbone."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q207",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q214",
+      "section": "OSPF SECTION",
       "question": "In a broadcast network, OSPF routers form adjacencies with which of the following?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5676,13 +5900,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: DR."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q208",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q215",
+      "section": "OSPF SECTION",
       "question": "Choose the Link-State Advertisements from the list (Choose three).",
-      "multi": true,
       "options": [
         {
           "id": "A",
@@ -5710,13 +5934,13 @@
         "B",
         "C"
       ],
-      "explanation": "Correct answers: Router LSA; Network LSA; Summary LSA."
+      "multi": true,
+      "explanation": ""
     },
     {
-      "id": "q209",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q216",
+      "section": "OSPF SECTION",
       "question": "BDR stands for:",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5734,13 +5958,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Backup DR."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q210",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q217",
+      "section": "OSPF SECTION",
       "question": "Each Autonomous Boundary Router (ABR) must have at least one interface connected to the Backbone Area.",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5754,13 +5978,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: True."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q211",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q218",
+      "section": "OSPF SECTION",
       "question": "Choose the Backbone Area.",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5786,13 +6010,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: 0.0.0.0."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q212",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q219",
+      "section": "OSPF SECTION",
       "question": "In the OSPF there are different types of routers.",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5806,13 +6030,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: True."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q213",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q220",
+      "section": "OSPF SECTION",
       "question": "OSPF uses TCP as a transport protocol.",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5826,13 +6050,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: False."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q214",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q221",
+      "section": "IPSEC SECTION",
       "question": "Which is a security principle from the CIA Triad?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5854,41 +6078,41 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Integrity."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q215",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q222",
+      "section": "IPSEC SECTION",
       "question": "Working with the CIA Triad usually requires...",
-      "multi": false,
       "options": [
         {
           "id": "A",
-          "text": "prioritizing the Triad principles in their order (C-I-A)."
+          "text": ".. prioritizing the Triad principles in their order (C-I-A)."
         },
         {
           "id": "B",
-          "text": "balancing the Triad principles."
+          "text": ". balancing the Triad principles."
         },
         {
           "id": "C",
-          "text": "making sure to meet all Triad principles fully."
+          "text": ". making sure to meet all Triad principles fully."
         },
         {
           "id": "D",
-          "text": "choosing one of the principles according to business objectives."
+          "text": ". choosing one of the principles according to business objectives."
         }
       ],
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: balancing the Triad principles.."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q216",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q223",
+      "section": "IPSEC SECTION",
       "question": "Which is the concept of controlling what a user can do after they are allowed access to a system?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5910,13 +6134,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Accounting."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q217",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q224",
+      "section": "IPSEC SECTION",
       "question": "Which risk treatment involves buying insurance or outsourcing the risk to another organization?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5938,13 +6162,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Risk Transference."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q218",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q225",
+      "section": "IPSEC SECTION",
       "question": "What is a weakness that could be exploited by a threat called?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5966,13 +6190,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: A vulnerability."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q219",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q226",
+      "section": "IPSEC SECTION",
       "question": "Safeguards are also known as....?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -5994,13 +6218,13 @@
       "correct": [
         "B"
       ],
-      "explanation": "Correct answer: Controls."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q220",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q227",
+      "section": "IPSEC SECTION",
       "question": "What is the concept that a user cannot deny that they performed an action on a system called?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -6022,13 +6246,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Non-repudiation."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q221",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q228",
+      "section": "IPSEC SECTION",
       "question": "Standards relating to the specification of the IPsec protocol are published by whom?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -6050,13 +6274,13 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: IETF."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q222",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q229",
+      "section": "IPSEC SECTION",
       "question": "Which of the following are both true statements about Transport mode compared with Tunnel mode?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -6078,13 +6302,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Transport mode produces smaller packets, Tunnel mode is more secure."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q223",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q230",
+      "section": "IPSEC SECTION",
       "question": "Pre-Shared Key (PSK) takes the form of ___",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -6106,13 +6330,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: A text string, entered manually by an administrator."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q224",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q231",
+      "section": "IPSEC SECTION",
       "question": "Which one of the following statements about Child SAs is true?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -6134,13 +6358,13 @@
       "correct": [
         "D"
       ],
-      "explanation": "Correct answer: Child SAs are created in unidirectional pairs."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q225",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q232",
+      "section": "IPSEC SECTION",
       "question": "IPsec sits at which layer of the OSI stack?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -6162,13 +6386,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Three (Network layer)."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q226",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q233",
+      "section": "IPSEC SECTION",
       "question": "Which statement is correct about an IPsec VPN?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -6190,13 +6414,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: An IPsec VPN exists between two IPsec peers."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q227",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q234",
+      "section": "IPSEC SECTION",
       "question": "ESP provides encryption and authentication, AH provides what?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -6218,13 +6442,13 @@
       "correct": [
         "A"
       ],
-      "explanation": "Correct answer: Authentication only."
+      "multi": false,
+      "explanation": ""
     },
     {
-      "id": "q228",
-      "section": "Knowledge Assessment - OSPF Fundamentals",
+      "id": "q235",
+      "section": "IPSEC SECTION",
       "question": "Secure keys are used for what?",
-      "multi": false,
       "options": [
         {
           "id": "A",
@@ -6246,7 +6470,8 @@
       "correct": [
         "C"
       ],
-      "explanation": "Correct answer: Traffic protection and peer authentication."
+      "multi": false,
+      "explanation": ""
     }
   ]
 }
