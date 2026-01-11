@@ -1,7 +1,7 @@
 {
   "title": "Exam Practice Quizzes",
-  "version": "4.1",
-  "generated_at": "2026-01-11T22:37:37.864381",
+  "version": "4.0",
+  "generated_at": "2026-01-11T22:15:24.063395",
   "questions": [
     {
       "id": "q1",
@@ -934,14 +934,20 @@
         },
         {
           "id": "B",
-          "text": "32 ff 0 48"
+          "text": "32"
         },
         {
           "id": "C",
+          "text": "48"
+        },
+        {
+          "id": "D",
           "text": "64"
         }
       ],
-      "correct": [],
+      "correct": [
+        "C"
+      ],
       "multi": false,
       "explanation": ""
     },
@@ -1056,10 +1062,16 @@
         },
         {
           "id": "C",
-          "text": "Delete, Replace, Forward ff 0 Push, Pop, Swap"
+          "text": "Delete, Replace, Forward"
+        },
+        {
+          "id": "D",
+          "text": "Push, Pop, Swap"
         }
       ],
-      "correct": [],
+      "correct": [
+        "D"
+      ],
       "multi": false,
       "explanation": ""
     },
@@ -1102,14 +1114,20 @@
         },
         {
           "id": "B",
-          "text": "Access ports or Dedicated ports ff 0 Access ports or Trunk ports"
+          "text": "Access ports or Dedicated ports"
         },
         {
           "id": "C",
+          "text": "Access ports or Trunk ports"
+        },
+        {
+          "id": "D",
           "text": "Dedicated ports"
         }
       ],
-      "correct": [],
+      "correct": [
+        "C"
+      ],
       "multi": false,
       "explanation": ""
     },
@@ -1744,7 +1762,11 @@
         },
         {
           "id": "C",
-          "text": "The queue depth reaches a point where drop probability is 1. 0 The queue depth reaches the maximum occupancy threshold."
+          "text": "The queue depth reaches a point where drop probability is 1."
+        },
+        {
+          "id": "D",
+          "text": "The queue depth reaches the maximum occupancy threshold."
         }
       ],
       "correct": [
@@ -3212,23 +3234,27 @@
     {
       "id": "q117",
       "section": "IPV4 SECTION",
-      "question": "What is another name for a default route? 0 The gateway route",
+      "question": "What is another name for a default route?",
       "options": [
         {
           "id": "A",
-          "text": "The worst case route"
+          "text": "The gateway route"
         },
         {
           "id": "B",
-          "text": "The zero address"
+          "text": "The worst case route"
         },
         {
           "id": "C",
+          "text": "The zero address"
+        },
+        {
+          "id": "D",
           "text": "The default vector"
         }
       ],
       "correct": [
-        "B"
+        "C"
       ],
       "multi": false,
       "explanation": ""
@@ -4520,7 +4546,11 @@
         },
         {
           "id": "B",
-          "text": "Speed of links 0 Number of routers in a path"
+          "text": "Speed of links"
+        },
+        {
+          "id": "C",
+          "text": "Number of routers in a path"
         }
       ],
       "correct": [
@@ -5655,7 +5685,11 @@
       "options": [
         {
           "id": "A",
-          "text": "True False"
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
         }
       ],
       "correct": [

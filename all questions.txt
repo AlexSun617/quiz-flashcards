@@ -1,0 +1,1743 @@
+Knowledge Assessment — BGP Overview
+
+Which of the following is not a downside of fully meshing BGP peers?
+
+©. Configuration overheads
+©. Poor scaling
+ff © Node isolation
+© Management overheads
+
+Without route reflectors or confederations, how do IBGP peers have to be organized in a
+Transit AS?
+
+© IBGP peers must use OSPF as an IGP.
+© IBGP peers must be peered with EBGP peers.
+© IBGP peers must be limited in numbers.
+ff © IBGP peers must be fully meshed with each other.
+
+What kind of routing protocol runs within an organization’s or enterprise’s autonomous
+system?
+
+© EBGP
+ff © IGP
+© IBGP
+© TCP
+
+What is the name for the ‘standardized multi-stage process’ used by BGP peers to
+establish a peer relationship?
+
+© TCP connection establishment
+© TCP session establishment
+© Peering state logic
+ff © Finite State Machine
+
+Approximately how many routing table entries does an Internet BGP router currently hold?
+
+© 100,000
+© 500,008
+ff © Inmillion
+© 1@million
+
+Which of the following is not a true description of BGP?
+
+© BGP ‘hides’ ISP infrastructure.
+© BGP permits highly flexible routing policy.
+ff © BGPadvertises any intra-AS topology changes.
+© BGPis a selective routing protocol.
+
+What's another name for a ‘path attribute’?
+
+© Variable
+© Link
+©. Table entry
+ff © Metric
+
+With confederations, Member ASs are connected by BGP peers running which protocol?
+
+ff © Intraconfederation EBGP
+©. Intraconfederation BGP
+© _Interconfederation EBGP
+©. Interconfederation BGP
+
+What would a BGP peer router do if it received no Keepalive message from its peer router
+within the required timeframe?
+
+© Send a Notification message to ask if the peer is ‘alive’.
+ff © End the BGP peering.
+© Wait 60 seconds more.
+© Move to the ‘OpenSent'’ state.
+
+Which of the following statements is correct?
+
+ff © BGP is the only routing protocol used to connect autonomous systems.
+© BGP is a very popular inter-AS routing protocol, but OSPF can also be used.
+© There are several routing protocols used to connect autonomous systems,
+but BGP has become popular recently.
+© BGP is a very popular inter-AS routing protocol, but IS-IS can also be used.
+
+Why do you need to be careful using BGP ‘redistribute’ statements?
+
+©. Because they can create network loops.
+© Because they will not share private addresses/prefixes.
+ff © Because they will share the entire set of local IGP prefixes if you don’t use some form
+of filtering.
+© Because they will only redistribute a maximum of 1024 prefixes from each
+autonomous system.
+
+Which transport protocol is used by BGP to establish peering sessions?
+
+© BITP
+© UDP
+© TTB
+ff © TcP
+
+Internal BGP can be used to create what kind of distributed system, capable of aggregating
+and forwarding IP traffic in bulk?
+
+© Packet backbone network
+©. Data center
+©. Ethernet switch
+ff © Transit AS
+
+Which statement is not a true statement about the BGP state model?
+
+© The state model is called a Finite State Machine.
+© Each state has a direct path to the ‘Idle’ state.
+ff © There are time duration dependencies for all state transitions.
+© The state machine has six states.
+
+Which two statements are used to instruct a router to share prefixes?
+
+© Network and announce
+©. Share and redistribute
+©. Share and announce
+ff © Network and redistribute
+
+Which of these four qualities is not typically used to describe BGP?
+
+©. Stable
+© Reliable
+ff © Low latency
+©. Scalable
+
+Which is the only path attribute to be added individually by a
+subsequent RFC to RFC4271?
+
+© Multi Exit Discriminator
+ff © AIGP
+© Weight
+© Local Preference
+
+What is the main purpose of path attributes?
+
+© Tocommunicate Link layer information.
+©. Todifferentiate between IBGP and EBGP-connected peers.
+ff © Toenablea BGP router to select the best path to a network prefix.
+© Tocommunicate how many BGP peers each BGP router has.
+
+How do BGP peers exchange path attribute information?
+
+© Using the BGP-MU messaging protocol.
+©. Using Notification messages.
+ff © Using Update messages.
+© Using the BGP-MP messaging protocol.
+
+The path attribute ‘Origin type’ prefers what type of paths?
+
+© Paths marked with an ‘i’ at the end of their AS path description.
+© Paths from EBGP peers.
+ff © Locally imported paths.
+© Paths with a low number of AS hops.
+
+In Accumulated IGP (‘AIGP’), what is being accumulated?
+
+ff © Metrics
+© MEDs
+© AS hops
+© EBGP peers
+
+What does the Network Layer Reachability Information (NLRI) consist of?
+
+©. Prefix and Next Hop
+ff © Length and Prefix
+© Length and Path
+© Next Hop and Length
+
+During the ‘Internal/External tiebreaker step, which type of routes will BGP remove
+from consideration?
+
+ff © All routes received via iBGP
+© All routes with an AS Hop count of more than one.
+© All routes received from another BGP peer.
+© All routes received through an Update message.
+
+Which of the following statements about the tiebreaking process is correct?
+
+© A tie is possible.
+© There are 10 types of path attribute to compare.
+© Some path attributes are optional, so they can be omitted from the best
+path selection process.
+ff © The list of path attributes must be compared in strict order.
+
+Which of the following does not exist in a modern network that uses switches rather than
+hubs.
+
+ff © Collisions
+© Broadcasts
+© Bridging table
+© VLANs
+
+What field in an Ethernet header comes between the Destination Address field and the Type
+field?
+
+© Time To Live
+ff © Source Address
+© FCS
+© Type of Service
+
+When a broadcast is sent to a switch, the switch will forward it to......?
+
+ff © all interfaces connected to switches
+©. no interfaces
+©. all interfaces in all VLANs
+© all interfaces in the same VLAN
+
+A bridge builds up a bridging table by examining the _____ of incoming frames?
+
+© Source IP address
+© Destination IP address
+©. Destination MAC address
+ff © Source MAC address
+
+
+
+Bridges and switches increase the number of collision domains in a network.
+
+ff © True
+© False
+
+Which of the following OSI Layers does Ethernet operate on?
+
+©. Session
+© Network
+ff © Data Link
+© Presentation
+© Application
+
+E-Line creates a virtual (i) connection between sites and E-LAN creates a virtual
+(ii) connection between sites. Fill in the two blanks with the correct terms.
+
+© (i) point-to-multipoint, (ii) multipoint-to-point
+ff © (i) point-to-point, (ii) multipoint-to-multipoint
+©. (i) multipoint-to-multipoint, (ii) point-to-point
+©. (i) rooted-to-multipoint, (ii) multipoint-to-point
+
+Typically, switches process frames (i) whereas bridges process frames
+(ii) . Fill in the two blanks with the correct terms.
+
+ff © (i) in hardware, (ii) in software
+©. (i) based on QoS, (ii) based on MAC addresses
+© (i) at layer two, (ii) at layer three
+© (i) in software, (ii) in hardware
+
+At which speed does an 10@@Base-LX1@ Ethernet connection operate?
+
+© 1000 bit/s
+© 10 Gbit/s
+© 100 Mbit/s
+ff © 1Gbit/s
+
+How many bits are there in an Ethernet address?
+
+© 24
+© 32
+ff @ 48
+© 64
+
+
+Can different interfaces on the same switch be assigned to different VLANs?
+
+ff © Yes
+© No
+
+Do VLANs allow different networks to connect to the same switches?
+
+© No
+ff © Yes
+
+Where in an Ethernet frame are the VLAN tags inserted?
+
+ff © After the Source Address field and before the Type field.
+©. Directly after the Destination Address field.
+©. Inthe Data field.
+© Inthe Type field, just after the Source Address field.
+
+What is the name of the main standard for VLAN tagging?
+
+ff © IEEE 802.1Q
+© IEEE 806.9
+© IEEE 802.1ad
+©. IEEE 8@6.Q in Asia and IEEE 802.1Q in the rest of the world.
+
+Which VLAN tagging operations exist?
+
+©. Push, Switch, Swap
+©. Pop, Rock, Punk
+©. Delete, Replace, Forward
+ff @ Push, Pop, Swap
+
+What is the part of a double-tagged frame called that contains two VLAN tags?
+
+ff © VLAN tag stack
+© Combined tag or C-tag
+©. VLAN tag bundle
+© VLAN tag pyramid
+
+What are switch ports configured as ina VLAN?
+
+©. Trunk ports or Passive ports
+© Access ports or Dedicated ports
+ff @ Access ports or Trunk ports
+©. Dedicated ports
+
+What are the outer and inner VLAN tags also called?
+
+©. Switch tag / S-tag and Customer tag / C-tag
+© Customer tag / C-tag and VLAN ID tag / VID-tag
+ff © Service tag / S-tag and Customer tag / C-tag
+©. Switch tag / S-tag and Priority Code Point tag / PCP-tag
+
+Which is true regarding an Ethernet Spanning Tree?
+
+© It eliminates broadcasts.
+© It loops frames to add redundancy to the network.
+© It is used to separate VLANs.
+ff © There is only one active path between any two points.
+
+MSTP is superior to STP and RSTP on three points and inferior on one. Which is the latter?
+
+ff © Flawless interaction with legacy bridges
+©. Highly scalable
+© Load balancing
+© Traffic engineering
+
+Which connection type does NOT exist for RSTP?
+
+© Edge
+ff © Dedicated
+©. Shared
+©. Point-to-Point
+
+Where in the Ethernet frame is the information encapsulated on which the port role selections
+are based?
+
+© In the Type field, just after the Source Address field.
+ff © In the Data field.
+©. In the Preamble field.
+© Directly after the Destination Address field.
+
+What is the name of the messages Ethernet switches running spanning tree protocols send to each other?
+
+© BID
+© ISL
+© Root Message
+ff © BPDU
+
+Which is an STP port role?
+
+ff © Root port
+© Listening port
+©. Dedicated port
+© LACP port
+
+Which kind of port is always in forwarding state?
+
+ff © Root bridge port
+© Root port
+© Designated port
+©. Alternate port
+
+RSTP includes two port roles not defined in STP. Backup is one of them, which is the other?
+
+©. Dedicated
+© Root
+ff © Alternate
+©. Designated
+
+Which of these applications is not affected so much by delay?
+
+ff © File transfer
+© Video over IP
+© Online trading
+© VoIP
+© Online gaming
+Which of these methods is not a way of increasing capacity in a network?
+
+©_ Increase the number of switches
+© Upgrade all fast Ethernet links / cables to gigabit Ethernet links / cables
+©. Increase the number of routers
+ff © Implement proper queuing mechanisms in the routers
+©. Increase the number of links / cables
+
+What does QoS stands for?
+
+© Queuing over Signaling
+© Queuing over SIGTRAN
+© Quality of Signaling
+ff © Quality of Service
+© Queuing or Scheduling
+
+Which of the following applications is an example of a “real-time” application?
+
+© File Transfer (FTP)
+ff © VoIP
+© Web browsing
+© Movie download
+
+For what purpose was Internet traditionally used?
+
+©. To watch videos
+©. To play online games
+© To make phone calls
+ff © To transfer information from one location to another
+
+Jitter is the metering of packets due to a service level agreement with the customer.
+
+© True
+ff © False
+
+Which statement or statements are true regarding DiffServ architecture?
+
+ff © So Routers at the edge of a DiffServ domain mark packets according to the domain QoS policy
+© DiffServ allows for end to end bandwidth reservation
+© Each router within a DiffServ domain takes independent QoS decision when forwarding a packet
+© Each router within a DiffServ domain needs to classify incoming packets to provide proper QoS
+handling
+
+Where is the DiffServ (Differentiated Services) value defined?
+
+© Ina label inserted after the IP header
+ff © In the IP header of a packet
+©. In each router's forwarding table
+©. In the content of a packet
+
+
+When classifying traffic, which type of identifier will classify a packet based only on the value
+of the DSCP?
+
+© Multi-Field Classifier
+© Token Bucket
+ff © BA identifier
+
+In PWFQ scheduling, which of the following factors is taken into consideration first when
+deciding on which queue should be served first?
+
+© Force
+ff © Priority
+© Queue number
+© Weight
+
+Even if there is plenty of bandwidth available, which of the following might still cause
+problems in the network?
+
+© Delay
+ff © Jitter
+© Throughput
+© Loss
+
+WFQ uses what to manage division of bandwidth between queues?
+
+© Force
+© Queue number
+ff © Weight
+© Priority
+
+How many different types of traffic does DiffServ allow?
+
+© 8
+© 16
+© 32
+ff © 64
+
+When using RED as a traffic congestion avoidance mechanism, all the packets trying to enter
+the queue will be dropped when:
+
+© The queue depth reaches the minimum occupancy threshold.
+© The queue depth reaches a point where drop probability is 10@.
+ff © The queue depth reaches a point where drop probability is 1.
+@ The queue depth reaches the maximum occupancy threshold.
+
+A port has been configured with PWFQ scheduler for 4 queues and a maximum rate of 4 Mbit/s.
+Queue 0 has been configured with a priority 1 and a weight of 52.
+Queue 1 has been configured with priority 1 and weight 50.
+Queues 3 and 4 both have a priority of 2 but weights of 30 and 70 respectively.
+At this given moment the port receives the following traffic pattern:
+No traffic for queue 0.
+1 Mb of traffic for queue 1.
+3 Mb for queue 3.
+2.5 Mb for queue 4.
+
+How much traffic will be transmitted from Queue 1?
+
+© 0 Mb
+© 0. 3 Mb
+© 0.5 Mb
+ff © 1Mb
+
+Finish the sentence with the correct answer. When packets are marked with an AF class, the
+higher the drop probability
+
+© The greater the chance of the packet being discarded when compared with packets marked
+with a lower class
+© The lower the chance of the packet being discarded when compared to other packets in the
+ same class
+© The lower the chance of the packet being discarded when compared with packets marked
+with a lower class
+ff © The greater the chance of the packet being discarded when compared to other packets in the
+same class
+
+How many QoS classes are supported by the Ethernet standard?
+
+© 3
+ff © 8
+© 64
+© 256
+
+TCAs are agreements between what?
+
+© Nodes not in any DS domain.
+© Boundary nodes with the same defined PHBs and DSCP-to-PHB mappings.
+ff © Boundary nodes.
+© All DS enabled nodes.
+
+Which of the following classes of PHB in DiffServ is the higher priority QoS class out of the
+following?
+
+ff © EF
+© DF
+© AF1
+© AF2
+
+If using PWFQ, when the priorities of all the queues are the same, then the schedulers behave
+like?
+
+© PFQ
+© PQ
+© PWQ
+ff © WFQ
+
+Which one of the following statements is true about queuing?
+
+© A queue is infinite in length.
+© Queues are always emptied in a round-robin fashion, one packet from each queue at a time.
+ff © It will only work properly if the flow of traffic is bursty.
+© Packets arriving are put in different queues in a round-robin fashion, depending on which
+arrive first.
+
+Why do many IP networks use a ‘meshed’ topology?
+
+© To avoid using expensive routers.
+ff © To provide resiliency and additional capacity.
+© To reduce the number of IP addresses needed.
+©. To avoid loops forming.
+
+From where did the physical Internet originate?
+
+© The DECNET in the USA.
+©. The ISOnet in the USA.
+ff © The ARPAnet in the USA.
+© The IEEEnet in the USA.
+
+In which decade was the World Wide Web (HTML, URLs etc.) founded?
+
+© 1960s
+© 1970s
+© 1980s
+ff © 1990s
+
+The TCP/IP model consists of the Application, Network, Link and which other
+layer?
+
+ff © Transport
+© Data
+© Routing
+© Internet
+
+Which type of network element comprises much of the central fabric of the
+Internet?
+
+© Database
+ff © Router
+© Smartphone
+© Base station
+
+Which of the following is a true statement?
+
+© IP can only be used for Enterprise networks.
+©. IP is a modern protocol developed specifically to support 21st century applications.
+© IP is a suite of networking protocols.
+ff © IP connects users to services over networks such as the Internet.
+
+Which is a true statement about using IPv4 and IPv6 in the same network?
+
+© It is possible only if 128-bit IPv4 addressing is used.
+©. It is not possible - you must use one or the other, but not both.
+ff © It is possible for both to co-exist.
+© It is possible for both to co-exist only if all network routers are provided by the same
+vendor.
+
+Before IP networks were established as multiservice networks (‘One IP
+network’), how were networks built?
+
+© Individual networks were built using systems from only one vendor each.
+© All traffic types used Asynchronous Transfer Mode (ATM) networks.
+ff © Individual networks were built for each traffic type.
+© All traffic types used Frame Relay networks.
+
+
+Knowledge Assessment — TCP/IP Model and Transport Layer
+
+Why does the Border Gateway Protocol use TCP?
+
+© Because TCP is the fastest choice.
+© Because TCP is the more bandwidth-efficient choice.
+ff © Because TCP guarantees data integrity.
+© Because TCP is well suited to ‘send and hope’ applications.
+
+Which of the following datagram types has a header and a trailer?
+
+ff © An Ethernet frame.
+© An IP packet.
+© AUDP segment.
+© A TCP segment
+
+What are Application port numbers used for?
+
+© They are used by Applications to specify the use of TCP or UDP.
+ff © They are used by Transport protocols to direct datagrams to the correct Application.
+© They are interpreted by the Network layer to apply quality of service treatments.
+©. They are used by the Network layer to determine whether to drop packets.
+
+If the TCP transport protocol is used when the end-to-end network is suffering
+from a relatively high number of bit errors, what could you do to try to increase
+throughput while maintaining data integrity?
+
+©. Increase Window size.
+© Decrease Window size.
+ff © Use the BGP transport protocol instead of TCP.
+© Use the UDP transport protocol instead of TCP.
+
+Which of the following are the names for the four layers in the TCP/IP model,
+from ‘top’ to ‘bottom’?
+
+ff © Application, Transport, Network, Link
+© Application, TCP, Data, Link
+© Application, Transport, Network, Transmission
+© Application, TCP, IP, Link
+
+Which standards body is responsible for Internet standards?
+
+©. The Internet Standards Forum.
+©. The Internet Engineering Forum.
+ff © The Internet Engineering Task Force.
+©. The Internet Protocol Task Force.
+
+Why does the Network Time Protocol use UDP?
+
+© Because UDP has unique header fields specifically for network timing purposes.
+ff © Because speed is the most important requirement.
+© Because UDP is always prioritized for forwarding by routers.
+© Because data integrity is the most important requirement.
+
+Which phrase represents the UDP transport strategy?
+
+© ‘Send and check’.
+© ‘Send and resend’.
+ff © ‘Send and hope’
+© ‘Send and confirm’.
+
+
+Knowledge Assessment — IP v4 Addressing
+
+Which of the following is a correct statement?
+
+© Private IP addresses use 24-bit length addresses.
+© The network 1@.x.x.x is not a Private IP address, where x = @ to 255.
+ff © Private IP addresses are not routable externally.
+©. Private IP addresses do not use subnet masks.
+
+How long is an IPv4 address and what order are the two parts of the address
+represented, left to right?
+
+© 16 bits, network part then host part
+© 30 bits, host part then network part
+© 32 bits, host part then network part
+ff © 32 bits, network part then host part
+
+Which of the following is not a technique to maximize available address space?
+
+© IP version 6
+© Private IP address space
+ff © Using subnet masks
+© Classless Inter-Domain Routing
+
+Which of these is a Class B network address?
+
+© 100.23.16.129
+© 212.34.16.11
+© 70.12.3.8
+ff © 190.155.63.0
+
+If an ISP is assigned the network address 202.100.0.0/16, which of the
+following subnets could be assigned to a customer of the ISP?
+
+© 35.100.0.0/18
+© 198.100.30.0/28
+ff © 202.100.192.0/18
+© 202.100.0.0/15
+
+If you wanted to create subnets from a Class B address, what is the minimum
+length subnet mask you could use?
+
+© 15
+© 16
+ff © 17
+© 18
+
+You can decide which Class (A, B, C) a classful network address is by inspecting
+which octet (left to right)?
+
+ff © First
+© Second
+© Third
+© Fourth
+
+When you apply a subnet mask to an IP address, what logical function is
+performed?
+
+© NOR
+ff © AND
+© XOR
+© OR
+
+
+In which part of an IP network will you normally find the highest throughput
+capacity routers?
+
+© The edge
+© The network operations center
+© The access
+ff © The core
+
+Which of these answers represents two link state routing protocols?
+
+© RIP, BGP
+ff © IS-IS, OSPF
+© IS-IS, BGP
+© RIP, OSPF
+
+A routing table entry includes a network address, a next hop address, and what
+else?
+
+ff © A port or interface identifier.
+© An up/down status identifier for the link to the next hop.
+© A routing protocol identifier.
+© An IP address for the outgoing port.
+
+When a router makes a routing decision and sends a packet to the next hop,
+what happens at the next hop router?
+
+©  The next hop router uses the routing decision already made by the previous router and
+sends the packet to the predetermined next hop.
+ff © The next hop router makes its own routing decision and sends the packet onto the new
+next hop.
+© The next hop router extracts the payload from the incoming packet and creates a new IP
+packet with its own source address, before route selection and transmission to the new
+next hop.
+©  The next hop router sends the packet to the destination address without performing a
+route lookup.
+
+In an IP network, is the path from A to B always the same as from B to A but in
+reverse?
+
+© Yes
+©. Only if the path is an even number of hops.
+© Yes, except after a link or node failure happens.
+ff © No
+
+What type of routers are used in ‘the cloud’?
+
+©. Physical
+© Edge
+© Core
+ff © Virtual
+
+IP Routing determines which one of the following?
+
+© How much capacity is available in a network for transmitting data.
+© What link speeds are used between routers in a network.
+© Which applications can be used over the network.
+ff © The path data follows when transmitted from source to destination.
+
+Which of these factors is not a primary routing protocol characteristic?
+
+© Routing loop avoidance.
+© How route selection is determined.
+© How the routing protocol scales with network size.
+ff © How quality of service (QoS) can be delivered.
+
+
+Knowledge Assessment — IP v4 Topology Considerations
+
+Why is quick convergence a positive characteristic for a routing protocol?
+
+© Because slow convergence creates much larger routing tables.
+© Because quick convergence reduces the likelihood of node and link failures.
+ff © Because during the time a network is not converged, the routing process may have
+unpredictable results.
+© Because quick convergence increases router packet throughput during converged conditions
+too.
+
+What is a common reason for loops forming in IP networks?
+
+© Routing table updates being affected by bit errors in transmission between nodes.
+ff © Routing tables not reflecting the true state of the network topology.
+© Badly made cables.
+© Routing protocol computation errors.
+
+What is/are the missing word(s) in the following sentence?
+Routing convergence happens when a set of routers in a network all share the
+same information about the network in which they operate.
+
+© Protocol
+© Pre-calculated path
+© Alternate route
+ff © Topology
+
+What mechanism exists to provide protection against link and node failures,
+before network convergence occurs?
+
+ff © Fast reroute
+© Route summarization
+© Border routing
+© Quality of Service
+
+Which of the following statements about large routing tables is incorrect?
+
+© Large routing tables are expensive in terms of memory requirements.
+© Large routing tables can create problems if they reach a router’s assigned memory limits.
+ff © Large routing tables require more host IP addresses for each router.
+© Large routing tables create larger routing updates.
+
+What is a primary use for Border Routers?
+
+
+© To act as an aggregation/concentration point for a large number of links from other
+networks.
+© To filter and limit traffic based upon application type.
+ff © To manage routing updates traveling between autonomous systems.
+©. To provide packet replication for multicast services.
+
+What is a possible consequence when a loop forms?
+
+©. The router will close down all ports.
+©. The router will reset.
+© Packets will be delivered to random destinations.
+ff © Link saturation will occur.
+
+How does BGP solve the problem of exponential routing table growth?
+
+© By restricting routing updates to certain parts of the day.
+© By using dedicated massive memory arrays for routing tables.
+© By restricting routing updates to only pre-determined routers.
+ff © Through route summarization between autonomous systems.
+
+
+How is an IP packet transported over Ethernet?
+
+© Ethernet frames are encapsulated within IP packets.
+© IP packets are sent using the Ethernet frame structure, substituting MAC
+addresses with IP addresses.
+ff © IP packets are encapsulated within Ethernet frames.
+© IP packets are sent in an Ethernet frame variant using the IPoE protocol.
+
+If a PC on a local area Ethernet network needs to communicate with a newly
+installed printer on the same Ethernet, how does it find the printer’s Destination
+MAC address?
+
+© The PC performs a DNS request.
+ff © The PC checks its ARP table then issues an ARP request, if required.
+© The PC sends a broadcast ‘MAC_addr_help’ message.
+© The PC searches its routing table.
+
+CSMA/CD stands for ‘Carrier Sense Multiple Access with (...) Detection’. What is
+the missing word?
+
+© Checksum
+© Combined
+© Carrier
+ff © Collision
+
+What function does the Frame Check Sequence perform for Ethernet frames?
+
+ff © It provides the ability to detect corrupted Ethernet frame data.
+©. It checks that all Ethernet frames are received in the correct sequence.
+©. It provides stateful security features.]
+© It checks that Ethernet-attached devices transmit in the correct order.
+
+At which layer in the TCP/IP model does Ethernet operate?
+
+© Network
+ff © Link
+© Transport
+© Application
+
+What is another name for a default route?
+
+@ The gateway route
+© The worst case route
+ff © The zero address
+©. The default vector
+
+ARP is a widely used communications protocol for ...?
+
+©... resolving routing table entries into longest matches.
+ff ©... resolving network-layer IP addresses into link layer MAC addresses.
+©... resolving Ethernet contention issues.
+©... resolving Ethernet MAC address duplication conflicts.
+
+Which standards body is responsible for the Ethernet main standard 802.3?
+
+ff © IEEE
+© 3GPP
+© IETF
+© CCITT
+
+Knowledge Assessment - IPv6 Overview
+
+Which statement is true about dual-stack routers?
+
+ff © Dual-stack routers can forward IPv4 and IPv6 packets simultaneously.
+© Dual-stack routers can forward IPv6 packets, but IPv4 packets must be encapsulated in
+IPv6.
+© Dual-stack routers are expensive because they require hardware duplication of every part
+of the router.
+© All routers in an IPv4/IPv6 network must be dual-stack routers.
+
+How large is the IPv6 address space?
+
+© 2^32 addresses
+© 2^64 addresses
+
+© 2^96 addresses
+ff © 2^128 addresses
+
+IPv6 directly enables a version of which routing protocol?
+
+© OSPF
+ff © Segment Routing
+© IS-IS
+© BGP
+
+Which protocol came between IPv4 and IPv6?
+
+©. Packetized Voice Protocol
+ff © Internet Stream Protocol
+©. Packetized Media Protocol
+© Internet Service Protocol
+
+Which statement is true about IPv6 deployment?
+
+ff © IPv6 deployment has been slower than perhaps anticipated, but deployment is significant,
+and will continue to grow.
+© IPv6 has been an unnecessary standard, and deployment has been minimal.
+© IPv6 has only been deployed in a small number of countries and organizations, and there is
+no expectation that it will grow.
+©. IPv6 deployment has quickly replaced IPv4, and IPv4 only remains in isolated ‘islands’.
+
+Why is hexadecimal notation used in written IPv6 addresses?
+
+© Hexadecimal is easier to remember because all the characters are letters from the alphabet (A-Z).
+© It is the only format routers can manipulate with such large addresses.
+© Hexadecimal notation has replaced decimal notation for both IPv6 and IPv4 addresses.
+ff © It makes the address shorter than using decimal or binary notation.
+
+How much larger is an IPv6 address compared with an IPv4 address?
+
+© 128 bits
+ff © 96 bits
+© 64 bits
+© 32 bits
+
+What are the two main IPv4-to-IPv6 transition techniques?
+
+© Termination and transition
+©. Termination and translation
+© Tunneling and transition
+ff © Tunneling and translation
+
+
+Knowledge Assessment - IPv6 Addressing
+
+A maximum of how many IPv6 addresses can be assigned to an IPv6 interface?
+
+© One
+© Two
+© Three
+ff © Three or more
+
+A minimum of how many bits of subnet address is required to represent 8 networks?
+
+© Two
+ff © Three
+© Four
+©. Eight
+
+An IPv6 address consists of how many bits?
+
+© 64
+© 1028
+© 2048
+ff © 128
+
+Why is colon-hexadecimal notation used instead of dotted-decimal notation for IPv6 address
+representation?
+
+ff © To shorten addresses.
+©. It would not be possible to use dotted-decimal notation.
+© Because computers can interpret colon-hexadecimal more quickly.
+© Because colon-hexadecimal notation is easier to remember.
+
+In an IPv6 address, what does’::’ (double colon) signify?
+
+© A multicast address
+ff © Zero compression
+© A loopback address
+©. Leading zero suppression
+
+Who directly supplies a company with an IPv6 Global routing prefix?
+
+© The company buys one from a public auction of available address space.
+ff © An Internet Service Provider.
+© A local Internet registry.
+© The Internet Assigned Numbers Authority.
+
+How is ‘1101’ (binary) represented in hexadecimal notation?
+
+© e
+© b
+ff © d
+© a
+
+Which of the following is not a legitimate way to represent the following IPv6 address?
+2001:0db8:140c:8000:0000:00d0:0000:140f
+
+ff © 2001:db8:140c::d0::140f
+© 2001:0db8:140c:0:0:00d0:0:140f
+© 2001:db8:140c::d0:0000:140f
+© 2001:db8:140c::d0:0:140f
+
+Which part of an IPv6 destination address does an IPv6 router use to make a forwarding
+decision for a received IPv6 packet?
+
+©. Destination port
+© Interface ID
+© Routing ID
+ff © Routing prefix
+
+Unique local unicast addresses can be used to provide what?
+
+ff © Private addressing.
+©. Loopback addresses.
+© Multicast communication with all Interface IDs on a local network.
+© Auto-configuration.
+
+What dictates the use of IPv6 address space?
+
+©. There are no strict standards, just recommendations.
+© International Telecommunication Union standards.
+ff © Internet Engineering Task Force standards.
+© Agreements between the telecom industry's major vendors.
+
+
+Which is the largest possible IPv4 or IPv6 packet header?
+
+© 20bytes
+© 40 bytes
+ff © 60 bytes
+© 82bytes
+
+Which of the following is a legitimate reason to reduce the number of header fields from IPv4
+to IPv6?
+
+ff © Fewer header fields means reduced processing for routing nodes.
+© IPv6 has a reduced set of possible applications than IPv4.
+© Advanced routers can no longer handle more than 8 fields because of the Application
+Specific Integrated Circuits (ASICs) used.
+© IPv6 has no need for any of the Options that were used in IPv4.
+
+Which Extension Header must appear first if more than one is used in a chain?
+
+© Authentication
+©. Destination Options
+© Fragment
+ff © Hop-by-Hop Options
+
+Which two fields comprise 80% of the IPv6 packet header?
+
+ff © Source and Destination Addresses
+©. Traffic Class and Header Checksum
+© Flow Label and Payload Length
+© Options and Padding
+
+Which IPv6 header characteristic helps to improve overall forwarding performance?
+
+ff © Simplicity
+© Feature richness
+© Flexibility
+©. Traffic Class field
+
+Which of the following is a unique aspect of the ESP Extension Header, compared with the
+other Extension Headers described?
+
+ff © The Next Header field is toward the end of the Extension Header rather than being the first
+field.
+© The ESP Extension Header does not align to 8-octet boundaries.
+© The ESP Extension Header cannot be chained with other Extension Headers.
+© The ESP Extension Header has to be used with a Fragment Extension Header.
+
+Each Extension Header must be a multiple of how many octets/bytes?
+
+ff © 8
+© 16
+© 24
+© 32
+
+How does IPv6 cater for the functionality that was previously included in the IPv4 ‘Options’
+field?
+
+© IPv6 doesn't permit the use of options.
+© IPv6 has an Extension Header type called ‘Options’.
+ff © IPv6uses one or more Extension Headers.
+©. IPv6 includes an Options field in the IPv6 Main Header.
+
+
+What is one of the biggest differences between stateless and stateful address
+autoconfiguration?
+© No DNS server is required.
+© Stateful address autoconfiguration requires no database administration.
+ff © No DHCP server is required.
+© Only one of them is supported by IPv6.
+
+Neighbor Discovery Protocol is supported by messages from which other protocol?
+
+© SMTP
+© BGP
+ff © ICMP
+© UDP
+
+Which of the following is not a Neighbor Discovery Protocol application?
+
+©. Address resolution
+©. Address autoconfiguration
+ff © Routing update generation
+© Prefix discovery
+
+Which is one of the main benefits of IPv6 autoconfiguration?
+
+ff © Reduced operational costs.
+© Reduced round-trip delays.
+©. Greater throughput.
+© Reduced capital expenditure.
+
+When the ‘EUI-64 interface identifier’ is used to create IPv6 addresses, what is the address
+created upon?
+
+© Another IPv6 address already issued to the same node.
+© A pseudo-random number generator using ‘64’ as a seed.
+© A pseudo-random number generated from the time of day.
+ff © The interface’s MAC address.
+
+How does an IPv6 host find its local network prefix?
+
+© The host sends a broadcast message soliciting help.
+©. The host can deduce its network prefix from its Link-local address.
+ff © The host sends a ‘Router Solicitation’ ICMPv6 message to its local router.
+©. The host sends a ‘Prefix Solicitation’ ICMPv6 message to its local router.
+
+Why are DNSv6 resource records called ‘AAAA’?
+
+ff © Because IPv6 addresses are four times as long as IPv4 addresses.
+© It relates to the format of the records which have four fields, each starting with an ‘A’.
+© Because ‘AAAA’ would be the first record alphanumerically.
+© It relates to the name of the address look-up algorithm.
+
+What are the two types of ICMP messages?
+
+© Control and status
+ff © Error and informational
+© Error and statistic
+© Control and event
+
+What type of protocol is IS-IS?
+
+ff © Link state
+© Static state
+©. Distance vector
+© Path vector
+
+IS-IS is used to exchange routing information.
+
+ff © True
+© False
+
+Which protocol family does IS-IS belong to?
+
+© SDH/Sonet
+ff © ISO/OSI
+© TCP/IP
+© IPX/SPX
+
+What is true about Integrated IS-IS?
+
+ff © It supports routing for both IP and ISO/OSI protocols
+© It provides an integrated network management solution
+© It integrates the best features of IS-IS and OSPF
+© It integrates routing and bridging within one router
+
+In which environment can IS-IS be deployed? (Choose 3)
+
+© Pure TCP
+ff © Dual OSI and IP
+ff © Pure OSI
+ff © Pure IP
+
+A router needs to build a routing table before it can forward traffic.
+
+ff © True
+© False
+
+Which are true statements about ISO/OSI protocols? (Choose 2)
+
+ff © They have been used to manage telecommunication equipment
+ © They area subset of TCP/IP
+ © They area superset of TCP/IP
+ff © They were supposed to replace TCP/IP
+
+What does a Level-1 IS router do? (Choose two)
+
+© Exchange routing information between areas
+ff © Sends packets destined for a different area to the closest Level 1/2 IS in its own area
+ff © Keeps track of the topology changes within its own area
+© Maintains topology of the whole network in a multi-area environment
+
+Select the most probable cause of suboptimal routing in IS-IS networks
+
+© Faulty SPF calculation
+© Too many hops included ina path
+ff © Default path selection based on attached bit
+© Incorrect interface speed recognition
+
+What is the SPF calculation based on for IS-IS?
+
+ff © Metric assigned to links
+©. Speed of links
+@ Number of routers in a path
+
+What is true about a Level 2 router? (Choose three)
+
+© Knows the topology of its own area
+ff © Is a backbone router
+ff © So Can have neighbors in the same and different areas
+ff © Contains both a Level 1 and Level 2 link-state database
+
+Select the 3 major components of an NSAP used in IP networks (Select three).
+
+© HO-DSP
+ff © AFI + area
+ff © SEL
+ © IDI
+ff © System ID
+
+How many DIS’‘es can be elected in a single L1 area?
+
+© l
+© 2
+© 3
+ff © Unlimited number
+
+Which statement is true regarding suboptimal routing in IS-IS networks?
+
+©. It can happen when routing within an L2 area
+© It can’t happen at all
+©. It can happen when routing within an L1 area
+ff © It can happen when routing between areas
+
+Which router will a Level 1 router choose when it needs to send a packet destined fora
+different area?
+
+© It chooses the closest Level 1 or Level 2 router in the area (based on path cost).
+©_ It chooses the Level 1 or Level 2 router having the shortest path to the destination.
+© It chooses the router with the lowest administrative distance.
+ff © It chooses the Level 1 router having the shortest path to the destination.
+
+What information can be found in an LSP? (Choose two)
+
+© Default gateway configured for the originating IS
+© Neighbors in the originating IS
+ff © Networks connected to the originating IS
+ff © A List of networks existing in the given area
+© Link state database
+
+All IS-IS routers within the same area must have the same topology database.
+
+© False
+ff © True
+
+A Level 1 router can have adjacent neighbors in a different area.
+
+ff © False
+© True
+
+How do IS routers learn a network topology?
+
+© Byrunning the SPF algorithm
+ff © By examining content of received LSPs
+© Through hello packets received from the neighbors
+© Through static configuration provisioned by a network administrator
+
+IS systems are considered neighbors when:
+
+© They are directly connected
+ff © They both received hello messages confirming neighbor status
+© They both received hello messages from each other
+© They belong to the same area
+
+Routing between different areas refers to which level of routing?
+
+© Level 0
+© Level 1
+ff © Level 2
+© Level 3
+
+What challenge does broadcast network present from the topology perspective?
+
+© Broadcast segments are seen as a star by outside systems
+© Broadcast segments are seen as a full mesh by outside systems
+© Broadcast networks don’t allow for DIS deployment
+ff © Broadcast segments generate too much control traffic
+
+Which are IS-IS router types? (Choose three)
+
+ff © Level 1/2
+ff © Level 1
+ff © Level 2
+© Level 3
+
+An L1/L2 router maintains two separate IP routing tables.
+
+ff © False
+© True
+
+An L1/L2 router maintains two separate link state databases.
+
+ff © True
+© False
+
+What is true about a Level 1 router?
+
+©. It is a backbone router
+©. It contains both a Level 1 and a Level 2 link-state database
+© It can have Level 1 and Level 2 adjacent neighbors
+ff © It knows the topology only of its own area
+
+
+Which action or actions can a Label Edge Router (LER) perform?
+
+© Push
+© Swap
+© Pop
+ff © Pop and push
+
+Which is another common name for an MPLS header?
+
+©. Addition header
+©. In-between header
+ff © Shim header
+© Cartridge header
+
+What do MPLS labels identify?
+
+ff © Established paths between endpoints
+© The best path from customer edge to customer edge
+© The paths with the lowest cost
+© The LSRs with the least downtime
+
+What is the purpose of Differentiated Services or DiffServ?
+
+© It can prioritize which LER or LSR that shall transmit a data packet
+© It enables comparisons between LSPs just like Open Shortest Path First (OSPF)
+ff © It is used for prioritization purposes
+©. It adds MPLS labels to identify VPNs
+
+Which two protocols can automate label configuration and label distribution in
+an MPLS network?
+
+ff © Label Distribution Protocol (LDP) and Resource Reservation Protocol - Traffic
+Engineering (RSVP-TE)
+©. Link Layer Discovery Protocol (LLDP) and Label Distribution Protocol (LDP)
+© Label Distribution Protocol (LDP) and Resource Preservation Protocol - Traffic
+Enlightenment (RPVP-TE)
+© Internet Control Message Protocol (ICMP) and Open Shortest Path First (OSPF)
+
+What are routers that operate at the edge of MPLS networks called?
+
+ff © Label Edge Router (LER)
+© MPLS Edge Router (MER)
+© Label Push and Pop Router (LPPR)
+© MPLS Entry and Exit Router (LEER)
+
+At which layer in the OSI model is MPLS said to operate?
+
+© Layer1
+© Layer 2
+ff © Layer 2.5
+© Layer3
+
+What kind of data can MPLS carry?
+
+© Voice
+© Video
+© Any unencrypted data
+ff © All the above and more
+
+What does the Traffic Class field in an MPLS label identify?
+
+ff © The QoS priority
+©. The class of the MPLS path
+©. The type of Layer 3 protocol
+©. The payload class
+
+MPLS inserts an MPLS header in packets. What is the most common mode for
+how this is done?
+
+ff © Frame mode
+©. Asynchronous transfer mode
+
+Where is the MPLS header located in a packet that contains a Layer 2 header
+and a payload header?
+
+©. Before the Layer 2 header
+ff © Right of the Layer 2 header
+©. After the payload
+© After the Layer 3 header
+
+What do MPLS labels identify?
+
+©. The paths with the lowest cost
+ff © Established paths between endpoints
+© The best path from customer edge to customer edge
+© The LSRs with the least downtime
+
+What is one router type in an MPLS network called?
+
+ff © Label Switch Router (LSR)
+© Label Swap Router (LSR)
+©. Label Switcher (LS)
+© MPLS Switch Router (MSR)
+
+What kind of data can MPLS carry?
+
+© Voice
+© Video
+© Any unencrypted data
+ff © All the above and more
+
+Can MPLS carry data for circuit-based networks and packet-switched
+networks?
+
+ff © Yes
+© Yes, unless it is duplex traffic
+©. No, only for circuit-based networks
+©. No, only for packet-switched networks
+
+How many Label Switch Paths (LSPs) does duplex traffic require?
+
+© 1
+ff © 2
+© 4
+© 8
+
+Which descriptions match (1) Convergence-based resilience and (2) Fast
+Reroute (FRR)?
+
+© (1) Passive handling with recalculation and (2) fast handling with recalculation
+ff © (1) Reactive handling with recalculation and (2) proactive handling with pre-calculation
+©. (1) Proactive handling with recalculation and (2) inactive handling with pre-calculation
+
+At which layer in the OSI model do LDP and RSVP-TE operate?
+
+© Network layer
+©. Session layer
+ff © Transport layer
+©. Data Link layer
+
+Which label distribution mode or modes are available for RSVP-TE?
+
+ff © Downstream on Demand
+© Downstream on Demand and Unsolicited Downstream
+© Unsolicited Downstream
+© Ordered and Independent Control
+
+For RSVP-TE, where is a description of the LSP stored?
+
+ff © In an Explicit Route Object (ERO) in all routers along the LSP
+©. In a Little Fast Information Base in all MPLS routers
+© In an Explicit Route Object (ERO) in the ingress and egress routers only
+©. In the shim header of each packet
+
+Which protocol selects the path to activate as an LSP?
+
+© LDP
+ff © The IGP
+© BGP
+© LDP and the IGP through a negotiation
+
+Which is the main difference between LDP and RSVP-TE?
+
+ff © RSVP-TE provides greater control over LSPs
+© LDP provides greater control over LSPs
+© LDP has a higher operational overhead
+© RSVP-TE is less flexible
+
+Based on what does RSVP-TE select a Label Switched Path (LSP)?
+
+© The automatically generated BGP path
+© The shortest path
+ff © A manually defined Forwarding Equivalence Class (FEC)
+© The RFC with the highest number
+
+For every network prefix in the FIB, LDP in the Label Edge Routers (LERs) and
+Label Switch Routers (LSRs) binds FECs to...?
+
+©. Interfaces
+ff © Labels
+© LSPs
+© Other FECs
+
+Which area plays the main role in the OSPF concept?
+
+ff © Backbone 
+© Level 1 area
+© Autonomous System
+© Area 1
+
+The routing table is required by router in order to forward traffic.
+
+ff © True
+False
+
+
+What type of protocol is OSPF?
+
+© Distance vector
+ff © Link state
+© Routed protocol
+© Path vector
+
+All areas must be connected to the Backbone area.
+
+ff © True
+© False
+
+
+What are the reasons to divide one large network into multiple smaller areas? (Choose 2)
+
+© It increases the number of routing recalculations in the routing database.
+ff © It reduces the number of routing recalculations in the routing database.
+© It increases the total number of possible connected subscribers.
+ff © It makes all changes inside any area invisible for all other areas .
+© It simplifies the architecture of the network.
+
+Choose the true statement.
+
+© OSPF is used to exchange routing information and calculate best paths to all sources.
+ff © OSPF is used to exchange routing information and calculate best paths to all destinations.
+© OSPF is used to forward data between sources and destinations.
+
+
+In the OSPF there are different roles routers can perform.
+
+ff © True
+© False
+
+Area Border Router is the router which :
+
+ff © Connects one or more areas to the Backbone Area.
+© Represents the multi-access network and its attached routers to the rest of the OSPF area.
+© Whose interfaces belong to the same area.
+
+
+
+Knowledge Assessment - OSPF Fundamentals
+
+Which area plays the main role in the OSPF concept?
+
+ff © Backbone
+© Level 1 area
+© Autonomous System
+© Area 1
+
+In a broadcast network, OSPF routers form adjacencies with which of the following?
+
+ff © DR
+© Adjacent router
+© Next hop router
+© Peer router
+
+
+Choose the Link-State Advertisements from the list (Choose three).
+
+ff © Router LSA
+ff © Network LSA
+ff © Summary LSA
+© AS Boundary Router Summary LSA
+© AS External LSA
+
+BDR stands for:
+
+© Bidirectional DR
+ff © Backup DR
+© Boundary DR
+
+
+Each Autonomous Boundary Router (ABR) must have at least one interface connected to the
+Backbone Area.
+
+ff © True
+© False
+
+Choose the Backbone Area.
+
+ff © 0.0.0.0
+© 0.0.0.1
+© 224.0.0.0
+© 224.0.0.1
+© 224.0.0.4
+
+
+In the OSPF there are different types of routers.
+
+ff © True
+© False
+
+OSPF uses TCP as a transport protocol.
+
+© True
+ff © False
+
+Which is a security principle from the CIA Triad?
+
+ff © Integrity
+© Identification
+© Indemnity
+© Information
+
+Working with the CIA Triad usually requires...
+
+©...prioritizing the Triad principles in their order (C-I-A).
+ff © ..balancing the Triad principles.
+©..making sure to meet all Triad principles fully.
+©..choosing one of the principles according to business objectives.
+
+Which is the concept of controlling what a user can do after they are allowed access to a system?
+
+© Authentication
+© Auditing
+ff © Accounting
+© Authorization
+
+Which risk treatment involves buying insurance or outsourcing the risk to another organization?
+
+© Risk Avoidance
+ff © Risk Transference
+© Risk Collection
+© Risk Acceptance
+
+What is a weakness that could be exploited by a threat called?
+
+© A risk
+© A breach
+ff © A vulnerability
+© An asset
+
+Safeguards are also known as....?
+
+© Counterparts
+ff © Controls
+© Capacities
+© Capabilities
+
+What is the concept that a user cannot deny that they performed an action on a system called?
+
+ff © Non-repudiation
+© Non-discriminatory
+© Non-interference
+© Non-redundancy
+
+Standards relating to the specification of the IPsec protocol are published by whom?
+
+© IETF and 3GPP
+© 3GPP
+ff © IETF
+© IEEE
+
+Which of the following are both true statements about Transport mode compared with
+Tunnel mode?
+
+ff © Transport mode produces smaller packets, Tunnel mode is more secure
+© Transport mode produces smaller packets, Tunnel mode is less secure
+© Transport mode produces larger packets, Tunnel mode is less secure
+©. Transport mode produces larger packets, Tunnel mode is more secure
+
+Pre-Shared Key (PSK) takes the form of ___
+
+©. An electronic chip device containing a secure ID
+© A certificate generated by the device vendor
+© A pseudo-random numeric sequence generated as a software toke
+ff © A text string, entered manually by an administrator
+
+Which one of the following statements about Child SAs is true?
+
+©. Child SAs are established before the IKE SA
+© Child SAs are related to one or more IKE SAs
+© Child SAs are renewed typically every 24 hours
+ff © Child SAs are created in unidirectional pairs
+
+IPsec sits at which layer of the OSI stack?
+
+ff © Three (Network layer)
+© Two (Data link layer)
+©. Four (Transport layer)
+©. Five (Session layer)
+
+Which statement is correct about an IPsec VPN?
+
+ff © An IPsec VPN exists between two IPsec peers
+© An IPsec VPN is always secured by Pre-Shared Keys
+© An IPsec VPN only exists when IPsec is used in transport mode
+© An IPsec VPN consists of one Child SA pair
+
+ESP provides encryption and authentication, AH provides what?
+
+ff © Authentication only
+© Encryption only
+©. Encryption and authentication
+© None of the above
+
+Secure keys are used for what?
+
+© Traffic protection and outer header calculation
+© Peer authentication only
+ff © Traffic protection and peer authentication
+© Traffic protection only

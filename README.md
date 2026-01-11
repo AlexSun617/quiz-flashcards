@@ -59,3 +59,7 @@ Your uploaded file uses:
 - If multiple options start with `ff`, it's a multi-select question.
 
 Use `convert_from_symbol_txt.py` to convert that format into `questions.json`.
+
+
+## Topic selector
+This site can run quizzes **topic-by-topic** (based on the `section` field in `questions.json`) or as **All topics** combined.
