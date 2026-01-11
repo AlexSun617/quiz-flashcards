@@ -33,6 +33,8 @@ const els = {
 const STORAGE_KEY = "quiz_flashcards_v1";
 const PROGRESS_KEY = "quiz_flashcards_progress_v1";
 
+
+const POS_KEY = "quiz_flashcards_pos_v1";
 let deck = null;
 let allQuestions = null; // full deck questions
 let currentTopic = 'ALL';
@@ -82,6 +84,43 @@ function readProgress() {
 function writeProgress(p) {
   localStorage.setItem(PROGRESS_KEY, JSON.stringify(p));
 }
+
+
+function readPositions() {
+  try {
+    const raw = localStorage.getItem(POS_KEY);
+    if (!raw) return {};
+    const parsed = JSON.parse(raw);
+    return (parsed && typeof parsed === "object") ? parsed : {};
+  } catch {
+    return {};
+  }
+}
+
+function writePositions(pos) {
+  try {
+    localStorage.setItem(POS_KEY, JSON.stringify(pos || {}));
+  } catch {}
+}
+
+function savePosition() {
+  if (!deck) return;
+  if (!currentTopic) return;
+  // "ALL_RANDOM" reshuffles; saving position is not very meaningful.
+  if (currentTopic === "ALL_RANDOM") return;
+
+  const pos = readPositions();
+  pos[currentTopic] = i;
+  writePositions(pos);
+}
+
+function loadPosition(topic) {
+  const pos = readPositions();
+  const v = pos?.[topic];
+  const n = Number(v);
+  return Number.isFinite(n) ? Math.floor(n) : null;
+}
+
 
 function computeStats() {
   const p = readProgress();
@@ -165,7 +204,9 @@ function render() {
         els.helperText.textContent = currentSelections.size < 2
           ? "This one is multi-select (you likely need 2 or more choices)."
           : "";
-      } else {
+      if (currentTopic === "ALL_RANDOM") startIndex = 0;
+
+  } else {
         els.helperText.textContent = "";
       }
     });
@@ -211,7 +252,8 @@ function setIndex(nextIndex) {
   if (!deck) return;
   const total = order.length;
   i = Math.max(0, Math.min(total - 1, nextIndex));
-  resetCardState();
+  
+  savePosition();resetCardState();
   render();
 }
 
@@ -242,7 +284,9 @@ function shuffleOrder() {
 
 function resetProgress() {
   localStorage.removeItem(PROGRESS_KEY);
-  computeStats();
+  
+  localStorage.removeItem(POS_KEY);
+computeStats();
   els.helperText.textContent = "Progress reset.";
   setTimeout(() => (els.helperText.textContent = ""), 1200);
 }
@@ -367,9 +411,30 @@ function applyTopic(topicValue) {
   if (currentTopic === "ALL_RANDOM") {
     shuffleOrder();
   }
-
   // Reset position and render
-  i = 0;
+
+// Choose a start index for this section:
+  // 1) Resume the last position in this section (if available)
+  // 2) Otherwise jump to the first unattempted question in this section
+  // 3) Otherwise start at the beginning
+  let startIndex = 0;
+
+  const saved = loadPosition(currentTopic);
+  if (saved !== null && saved >= 0 && saved < order.length) {
+    startIndex = saved;
+  } else {
+    const p = readProgress();
+    for (let k = 0; k < order.length; k++) {
+      const q = allQuestions[order[k]];
+      const qid = String(q?.id ?? order[k]);
+      if (!p.attempted?.[qid]) {
+        startIndex = k;
+        break;
+      }
+    }
+  }
+
+  i = startIndex;
   resetCardState();
   render();
 
